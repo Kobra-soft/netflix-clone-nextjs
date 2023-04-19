@@ -76,7 +76,7 @@ const Navbar = () => {
                     </div>
                     <div className="flex flex-row items-center gap-2 cursor-pointer relative">
                     <div className="w-7 h-7 lg:w-[1.95rem] lg:h-[1.95rem] rounded-[0.30rem] overflow-hidden">
-                        <img src="/images/default-blue.png"></img>
+                        <img src="/images/default-squidgame2.png"></img>
                     </div>
                     {/* <CgChevronDown className="text-white ml-1 mt-0 transition" /> */}
                     <AiFillCaretDown className={`text-white w-[0.80rem] h-4 mr-[3.8rem] transition ${showMobileMenu ? 'rotate-180' : 'rotate-0'}`}/>
