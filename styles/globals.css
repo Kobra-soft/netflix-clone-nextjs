@@ -2,9 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@font-face {
+  font-family: NetflixSans;
+  src: url('/fonts/NetflixSans-Light.otf');
+  /* src: url('/fonts/NetflixSans-Regular.otf'); */
+  /* src: url('/fonts/NetflixSans-Medium.otf'); */
+  /* src: url('/fonts/NetflixSans-Bold.otf'); */
+} 
+
 body {
-  @apply bg-[#2e2e2e] h-full overflow-hidden;
-  /* @apply bg-[#141414] h-full overflow-hidden; */
+ /*  @apply bg-[#2e2e2e] h-full overflow-hidden; */
+  @apply bg-[#141414] h-full overflow-hidden;
+  font-family: 'NetflixSans'
 }
 
 #__next {
