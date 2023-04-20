@@ -29,10 +29,13 @@ export default function Home() {
    <>
     <Head>
     <title>Netflix - Clone</title>
+    <meta name="description" content="Developed B Kobra_Soft" />
     <link rel="shortcut icon" href="/favicon/favicon2.ico" />
     </Head>
 
-    <Navbar/>
+    <Navbar />
+    
+    <Billboard/>
    </>
   )
 }
