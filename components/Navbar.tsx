@@ -2,6 +2,7 @@ import { useCallback, useEffect, useState } from "react";
 import React from 'react';
 
 import { AiFillCaretDown } from "react-icons/ai"
+
 import NetflixSearchLogo from "./NetflixSearchLogo"
 import NetflixBellLogo from "./NetflixBellLogo";
 

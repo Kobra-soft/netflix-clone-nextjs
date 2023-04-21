@@ -4,17 +4,50 @@
 
 
 @font-face {
-  font-family: NetflixSans;
+  font-family: NetflixSansLight;
   src: url('/fonts/NetflixSans-Light.otf');
   /* src: url('/fonts/NetflixSans-Regular.otf'); */
   /* src: url('/fonts/NetflixSans-Medium.otf'); */
   /* src: url('/fonts/NetflixSans-Bold.otf'); */
 } 
 
+@font-face {
+  font-family: NetflixSansRegular;
+  src: url('/fonts/NetflixSans-Regular.otf');
+  /* src: url('/fonts/NetflixSans-Regular.otf'); */
+  /* src: url('/fonts/NetflixSans-Medium.otf'); */
+  /* src: url('/fonts/NetflixSans-Bold.otf'); */
+} 
+
+@font-face {
+  font-family: NetflixSansMedium;
+  src: url('/fonts/NetflixSans-Medium.otf');
+  /* src: url('/fonts/NetflixSans-Regular.otf'); */
+  /* src: url('/fonts/NetflixSans-Medium.otf'); */
+  /* src: url('/fonts/NetflixSans-Bold.otf'); */
+} 
+
+nav {
+  font-family: 'NetflixSansLight'
+}
+
 body {
  /*  @apply bg-[#2e2e2e] h-full overflow-hidden; */
   @apply bg-[#141414] h-full overflow-hidden;
-  font-family: 'NetflixSans'
+  font-family: 'NetflixSansLight'
+}
+
+/* title */
+h1 {
+  font-family: 'NetflixSansMedium'
+}
+/* description */
+h2 {
+  font-family: 'NetflixSansLight'
+}
+
+p {
+  font-family: 'NetflixSansLight'
 }
 
 #__next {
