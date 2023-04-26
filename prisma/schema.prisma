@@ -70,3 +70,13 @@ model Movie {
   genre        String
   duration     String
 }
+
+model Movie2 {
+  id           String @id @default(auto()) @map("_id") @db.ObjectId
+  title        String
+  description  String
+  videoUrl     String
+  thumbnailUrl String
+  genre        String
+  duration     String
+}

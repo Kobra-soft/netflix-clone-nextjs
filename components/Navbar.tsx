@@ -43,33 +43,34 @@ const Navbar = () => {
     }, []);
 
     return (
-        <nav className="w-full fixed z-40">
+        <nav className="bg-black w-full fixed z-40">
             {/* change all px values to pl padding left, as could not move the flex right (navbar items!!) */}
             <div className={`
             px-[1.04rem]
+            sm:pl-[1.6rem]
             md:pl-[2.26rem]
-            lg:pl-[3.70rem]
+            lg:pl-[2.84rem]
+            xl:pl-[3.70rem]
 
-            py-2.5
-            md:py-[18.5px]
+            py-[8px]
+            sm:py-[5px]
+            md:py-[5px]
             lg:py-[18px]
+            xl:py-[18px]
 
-            flex
-            flex-row
-            items-center
-            transition
-            duration-500
+            flex flex-row items-center transition duration-500
             ${ShowBackground ? 'bg-[#0b0b0b] bg-opacity-90' : ''}
             `}
             >
-                <img className="h-[0.92rem] md:h-[1.55rem] lg:h-[1.55rem]" src="/images/logo.png" alt="" />
+                <img className="h-[0.92rem] sm:h-[1.0rem] md:h-[1.0rem] lg:h-[1.55rem]" src="/images/logo.png" alt="" />
 
                 <div className="
                 flex-row
-                ml-[2.88rem]
-                gap-5
+
+                ml-[2.88rem] sm:ml-[1.40rem] md:ml-[1.40rem] xl:ml-[2.88rem]
+                gap-5 md:gap-4 xl:gap-5
                 hidden
-                lg:flex
+                md:flex lg:flex
                 "
                 >
                     <NavbarItemHome label="Home"/>
@@ -80,12 +81,16 @@ const Navbar = () => {
                     <NavbarItem label="Browse by Languages" />
                 </div>
                 <div onClick={toggleMobileMenu}
-                className="lg:hidden flex flex-row items-center gap-1 ml-6 cursor-pointer relative">
-                <p className="text-white text-[11.3px] md:text-[13.3px] lg:text-[13.3px] tracking-[.044em] items-center">Browse</p>
+                className="lg:hidden md:hidden flex flex-row items-center gap-1 ml-6 cursor-pointer relative">
+                <p className="text-white 
+                text-[8.0px] md:text-[12.6px] lg:text-[13.3px] 
+                tracking-[.044em] items-center">Browse</p>
                     <AiFillCaretDown className={`text-white ml-0 w-[0.82rem] h-4 transition ${showMobileMenu ? 'rotate-180' : 'rotate-0'}`} />
                     <MobileMenu visible={showMobileMenu}/>
                 </div>
-                <div className="flex flex-1 justify-end gap-5 space-x-0 items-center">
+
+                <div className="flex flex-1 justify-end space-x-0 items-center
+                 gap-4 sm:gap-4 md:gap-4 lg:gap-5 xl:gap-5">
                     <div className="hover:text-gray-300 cursor-pointer transition">
                     <NetflixSearchLogo/>
                     </div>

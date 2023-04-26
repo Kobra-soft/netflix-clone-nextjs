@@ -2,34 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @font-face {
   font-family: NetflixSansLight;
   src: url('/fonts/NetflixSans-Light.otf');
-  /* src: url('/fonts/NetflixSans-Regular.otf'); */
-  /* src: url('/fonts/NetflixSans-Medium.otf'); */
-  /* src: url('/fonts/NetflixSans-Bold.otf'); */
 } 
 
 @font-face {
   font-family: NetflixSansRegular;
   src: url('/fonts/NetflixSans-Regular.otf');
-  /* src: url('/fonts/NetflixSans-Regular.otf'); */
-  /* src: url('/fonts/NetflixSans-Medium.otf'); */
-  /* src: url('/fonts/NetflixSans-Bold.otf'); */
 } 
 
 @font-face {
   font-family: NetflixSansMedium;
   src: url('/fonts/NetflixSans-Medium.otf');
-  /* src: url('/fonts/NetflixSans-Regular.otf'); */
-  /* src: url('/fonts/NetflixSans-Medium.otf'); */
-  /* src: url('/fonts/NetflixSans-Bold.otf'); */
 } 
 
-nav {
+@font-face {
+  font-family: NetflixSansBold;
+  src: url('/fonts/NetflixSans-Bold.otf');
+} 
+
+/* nav {
   font-family: 'NetflixSansLight'
-}
+} */
 
 body {
  /*  @apply bg-[#2e2e2e] h-full overflow-hidden; */
@@ -42,18 +37,52 @@ h1 {
   font-family: 'NetflixSansMedium'
 }
 /* description */
-h2 {
+/* h2 {
   font-family: 'NetflixSansLight'
+} */
+
+.__description {
+  font-family: 'NetflixSansLight',
 }
 
 p {
-  font-family: 'NetflixSansLight'
+  font-family: 'NetflixSansRegular'
 }
 
+/* .banner--fadeBottom{
+  height: 17.4rem;
+  margin-bottom: 8.45rem;
+  background-image: linear-gradient(
+    180deg,
+    transparent, 
+    rgba(0, 0, 0, 0.91),
+    #000000
+  )
+} */
+
 #__next {
+  overflow-y: scroll;
+  overflow-x: hidden;
   @apply h-full;
 }
 
 html {
   @apply h-full;
+}
+
+.nav{
+  font-family: 'NetflixSansLight';
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+
+  /* Animations */
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
+}
+
+.nav__black{
+  /* background-color: #111; */
+  background-color: #141414;
 }

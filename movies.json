@@ -1,34 +1,50 @@
 [
   {
-    "title": "Big Buck Bunny",
-    "description": "Three rodents amuse themselves by harassing creatures of the forest. However, when they mess with a bunny, he decides to teach them a lesson.",
-    "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
-    "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/7/70/Big.Buck.Bunny.-.Opening.Screen.png",
-    "genre": "Comedy",
-    "duration": "10 minutes"
-  },
-  {
-    "title": "Sintel",
-    "description": "A lonely young woman, Sintel, helps and befriends a dragon, whom she calls Scales. But when he is kidnapped by an adult dragon, Sintel decides to embark on a dangerous quest to find her lost friend Scales.",
-    "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4",
-    "thumbnailUrl": "http://uhdtv.io/wp-content/uploads/2020/10/Sintel-3.jpg",
-    "genre": "Adventure",
-    "duration": "15 minutes"
-  },
-  {
-    "title": "Tears of Steel",
-    "description": "In an apocalyptic future, a group of soldiers and scientists takes refuge in Amsterdam to try to stop an army of robots that threatens the planet.",
-    "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4",
-    "thumbnailUrl": "https://mango.blender.org/wp-content/uploads/2013/05/01_thom_celia_bridge.jpg",
-    "genre": "Action",
-    "duration": "12 minutes"
-  },
-  {
-    "title": "Elephant's Dream",
-    "description": "Friends Proog and Emo journey inside the folds of a seemingly infinite Machine, exploring the dark and twisted complex of wires, gears, and cogs, until a moment of conflict negates all their assumptions.",
-    "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
-    "thumbnailUrl": "https://download.blender.org/ED/cover.jpg",
+    "title": "Guardians of the Galaxy 3",
+    "description": "Still reeling from the loss of Gamora, Peter Quill must rally his team to defend the universe and protect one of their own. If the mission is not completely successful, it could possibly lead to the end of the Guardians as we know them.",
+    "videoUrl": "https://ia601606.us.archive.org/15/items/guardians-of-the-galaxy-vol-3-offical-trailer-x-265/Guardians%20of%20the%20Galaxy%20Vol%203%20Official%20Trailer%20x265.mp4",
+    "thumbnailUrl": "https://i.ibb.co/QMdbsC3/p061d1pl.jpg",
     "genre": "Sci-Fi",
-    "duration": "15 minutes"
+    "duration": "2 minutes"
+  },
+  {
+    "title": "Insidious: The Red Door",
+    "description": "Josh Lambert heads east to drop his son, Dalton, off at school. However, Dalton's college dream soon becomes a living nightmare when the repressed demons of his past suddenly return to haunt them both.",
+    "videoUrl": "https://movietrailers.apple.com/movies/sony_pictures/insidious-the-red-door/insidious-the-red-door-trailer-1_h1080p.mov",
+    "thumbnailUrl": "https://i.ibb.co/C5SqWqG/Ft-MRkv3-WYAA5-NHd.jpg",
+    "genre": "Horror",
+    "duration": "2 minutes"
+  },
+  {
+    "title": "Super Mario Bros",
+    "description": "With help from Princess Peach, Mario gets ready to square off against the all-powerful Bowser to stop his plans from conquering the world.",
+    "videoUrl": "https://movietrailers.apple.com/movies/universal/the-super-mario-bros-movie/super-mario-bros-movie-trailer-3_h1080p.mov",
+    "thumbnailUrl": "https://i.ibb.co/PFxbp47/mario-1675462543009.png",
+    "genre": "Animation",
+    "duration": "2 minutes"
+  },
+  {
+    "title": "Evil Dead Rise",
+    "description": "A reunion between two estranged sisters gets cut short by the rise of flesh-possessing demons, thrusting them into a primal battle for survival as they face the most nightmarish version of family imaginable.",
+    "videoUrl": "https://movietrailers.apple.com/movies/wb/evil-dead-rise/evil-dead-rise-trailer-2_h1080p.mov",
+    "thumbnailUrl": "https://i.ibb.co/tqYmcVR/EDR.jpg",
+    "genre": "Horror",
+    "duration": "2 minutes"
+  },
+  {
+    "title": "Scream 2022",
+    "description": "Twenty-five years after a streak of brutal murders shocked the quiet town of Woodsboro, Calif., a new killer dons the Ghostface mask and begins targeting a group of teenagers to resurrect secrets from the town's deadly past.",
+    "videoUrl": "https://movietrailers.apple.com/movies/paramount/scream-2022/scream-trailer-1_h1080p.mov",
+    "thumbnailUrl": "https://i.ibb.co/YQkNQw1/Scream-2022.jpg",
+    "genre": "Horror",
+    "duration": "2 minutes"
+  },
+  {
+    "title": "Scott Pilgrim vs. The World",
+    "description": "Scott Pilgrim meets Ramona and instantly falls in love with her. But when he meets one of her exes at a band competition, he realises that he has to deal with all seven of her exes to woo her.",
+    "videoUrl": "https://trailers.apple.com/movies/universal/scottpilgrim/scottpilgrim-tlr1_h1080p.mov",
+    "thumbnailUrl": "https://i.ibb.co/1vvYQq5/Scott-Pilgrim-Social.png",
+    "genre": "Comedy",
+    "duration": "2 minutes"
   }
 ]
