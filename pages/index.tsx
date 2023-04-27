@@ -1,10 +1,11 @@
 import { NextPageContext } from "next"
-import { getSession} from "next-auth/react"
+import Head from "next/head";
+import Header from "@/components/Header";
 
+import { getSession} from "next-auth/react"
 import useCurrentUser from "@/hooks/useCurrentUser";
 import Navbar from "@/components/Navbar";
 
-import Head from "next/head";
 import Billboard from "@/components/Billboard";
 import MovieList from "@/components/MovieList";
 import useMovieList from "@/hooks/useMovieList";
@@ -39,22 +40,42 @@ export default function Home() {
     <link rel="shortcut icon" href="/favicon/favicon2.ico" />
     </Head>
 
-    <Navbar />
+    <Header/>
+
+{/* <Navbar />  */}
     
     <Billboard/>
     
-    <div className="scrollHor2 pb-5 lg:pb-5">
+    <div className="pb-5 lg:pb-5">
       <MovieList title="Trending Now" data={movies}/>
     </div>
-    <div className="lg:mt-[16.4rem]">
+    <div className="pb-5 lg:pb-5 lg:mt-[16.4rem]">
       <MovieList title="Recently Added" data={movies}/>
     </div>
-{/*     <div className="lg:mt-[16.4rem]">
+    <div className="pb-5 lg:pb-5 lg:mt-[16.4rem]">
       <MovieList title="Sci-Fi Films" data={movies}/>
     </div>
-    <div className="lg:mt-[16.4rem]">
+    <div className="pb-5 lg:pb-5 lg:mt-[16.4rem]">
       <MovieList title="My List" data={movies}/>
-    </div> */}
+    </div>
+    <div className="pb-5 lg:pb-5 lg:mt-[16.4rem]">
+      <MovieList title="Recently Added" data={movies}/>
+    </div>
+    <div className="pb-5 lg:pb-5 lg:mt-[16.4rem]">
+      <MovieList title="Sci-Fi Films" data={movies}/>
+    </div>
+    <div className="pb-5 lg:pb-5 lg:mt-[16.4rem]">
+      <MovieList title="My List" data={movies}/>
+    </div>
+    <div className="pb-5 lg:pb-5 lg:mt-[16.4rem]">
+      <MovieList title="Recently Added" data={movies}/>
+    </div>
+    <div className="pb-5 lg:pb-5 lg:mt-[16.4rem]">
+      <MovieList title="Sci-Fi Films" data={movies}/>
+    </div>
+    <div className="pb-5 lg:pb-5 lg:mt-[16.4rem]">
+      <MovieList title="My List" data={movies}/>
+    </div>
    </>
   )
 }

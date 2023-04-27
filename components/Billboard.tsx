@@ -18,7 +18,7 @@ const Billboard = () => {
 
             <video 
             className="w-full 
-            h-[54.25vw] sm:h-[54.25vw] md:h-[54.25vw] lg:h-[56.25vw] xl:h-[56.25vw] 2xl:h-[50.25vw]
+            h-[54.25vw] sm:h-[54.25vw] md:h-[54.25vw] lg:h-[56.25vw] xl:h-[56.25vw] 2xl:h-[48.25vw]
             object-cover 
             brightness-[70%]"
             controls autoPlay muted loop
