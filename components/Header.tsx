@@ -53,14 +53,14 @@ const toggleAccountMenu = useCallback(() => {
 
       <div className={`
       flex items-center transition duration-500 
-      px-[0rem] sm:pl-[0rem] md:pl-[0rem] lg:pl-[2.95rem] xl:pl-[3.75rem] 
+      px-[0rem] sm:pl-[0rem] md:pl-7 lg:pl-[2.95rem] xl:pl-[3.75rem] 
       py-[0px] sm:py-[0px] md:py-[0px] lg:py-[0px] xl:py-[0px]`}>
         
-        <img className="h-[1.57rem] sm:h-[1.57rem] md:h-[1.57rem] lg:h-[1.57rem]"  src="/images/logo.png" alt="" />
+        <img className="h-[0.95rem] sm:h-[0.95rem] md:h-[0.95rem] lg:h-[1.57rem]"  src="/images/logo.png" alt="" />
 
         <div className="
-        ml-[2.88rem] sm:ml-[1.40rem] md:ml-[2.68rem] xl:ml-[2.80rem]
-        gap-5 md:gap-5 xl:gap-5 hidden md:flex lg:flex">
+        ml-[2.88rem] sm:ml-[1.40rem] md:ml-[1.6rem] xl:ml-[2.80rem]
+        gap-5 md:gap-4.5 xl:gap-5 hidden md:flex lg:flex">
             <NavbarItemHome label="Home"/>
             <NavbarItem label="Series" />
             <NavbarItem label="Films" />

@@ -8,7 +8,8 @@
     font-family: 'NetflixSansLight'
   }
   header {
-    @apply fixed top-0 z-40 flex w-full items-center justify-between px-4 py-4 transition-all lg:px-0 lg:py-5;
+    @apply fixed top-0 z-40 flex w-full items-center justify-between transition-all 
+    sm:px-4 sm:py-1.5 px-4 py-1.5 md:px-2 md:py-1 lg:px-0 lg:py-5;
   }
 }
 

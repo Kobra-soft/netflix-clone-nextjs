@@ -9,6 +9,7 @@ import Navbar from "@/components/Navbar";
 import Billboard from "@/components/Billboard";
 import MovieList from "@/components/MovieList";
 import useMovieList from "@/hooks/useMovieList";
+import { Text } from "@chakra-ui/react";
 
 
 export async function getServerSideProps(context: NextPageContext) {
@@ -33,7 +34,8 @@ export default function Home() {
   const { data: movies = [] } = useMovieList();
 
   return (
-   <>
+   <div className="relative h-screen bg-gradient-to-b from-gray-900/10
+   to-[#010511] lg:h-[140vh]">
     <Head>
     <title>Netflix - Clone</title>
     <meta name="description" content="Developed By Kobra_Soft" />
@@ -42,40 +44,29 @@ export default function Home() {
 
     <Header/>
 
-{/* <Navbar />  */}
+    <main>
+      { /* Banner */ }
+      <section>
+      { /* Row */ }
+      { /* Row */ }
+      { /* Row */ }
+      { /* Row */ }
+      { /* Row */ }
+      { /* Row */ }
+      </section>
+    </main>
+    { /* Modal */ }
+
+    {/* <Navbar />  */}
     
-    <Billboard/>
-    
-    <div className="pb-5 lg:pb-5">
+    {/* <Billboard/> */}
+
+    {/*     
+      <div className="pb-5 lg:pb-5 text-white">
       <MovieList title="Trending Now" data={movies}/>
-    </div>
-    <div className="pb-5 lg:pb-5 lg:mt-[16.4rem]">
-      <MovieList title="Recently Added" data={movies}/>
-    </div>
-    <div className="pb-5 lg:pb-5 lg:mt-[16.4rem]">
-      <MovieList title="Sci-Fi Films" data={movies}/>
-    </div>
-    <div className="pb-5 lg:pb-5 lg:mt-[16.4rem]">
-      <MovieList title="My List" data={movies}/>
-    </div>
-    <div className="pb-5 lg:pb-5 lg:mt-[16.4rem]">
-      <MovieList title="Recently Added" data={movies}/>
-    </div>
-    <div className="pb-5 lg:pb-5 lg:mt-[16.4rem]">
-      <MovieList title="Sci-Fi Films" data={movies}/>
-    </div>
-    <div className="pb-5 lg:pb-5 lg:mt-[16.4rem]">
-      <MovieList title="My List" data={movies}/>
-    </div>
-    <div className="pb-5 lg:pb-5 lg:mt-[16.4rem]">
-      <MovieList title="Recently Added" data={movies}/>
-    </div>
-    <div className="pb-5 lg:pb-5 lg:mt-[16.4rem]">
-      <MovieList title="Sci-Fi Films" data={movies}/>
-    </div>
-    <div className="pb-5 lg:pb-5 lg:mt-[16.4rem]">
-      <MovieList title="My List" data={movies}/>
-    </div>
-   </>
+      <Text className="text-white">Trending Now</Text>
+      </div> */}
+
+      </div>
   )
 }
