@@ -54,7 +54,8 @@ function Banner({netflixOriginals}: Props) {
             tracking-tight
             font-extrabold
             drop-shadow-1xl">
-            {truncate(movie?.title || movie?.name || movie?.original_name, 26)}
+            {movie?.title || movie?.name || movie?.original_name}
+            {/* {truncate(movie?.title || movie?.name || movie?.original_name, 26)} */}
             {/* {truncate(data?.title, 25)} */}
             </h1>
 
@@ -65,7 +66,8 @@ function Banner({netflixOriginals}: Props) {
             font-light
             mt-3 md:mt-5 lg:mt-5
             w-[52%] sm:w-[62%] md:w-[52%] lg:w-[37%] xl:w-[37%]
-            drop-shadow-xl">{truncate(movie?.overview, 225)}</h2>
+            drop-shadow-xl">{movie?.overview}</h2>
+            {/* {truncate(movie?.overview, 225)}</h2> */}
             {/* {truncate(data?.description, 190)} */}
 
             <div className="flex flex-row items-center mt-3 md:mt-8 gap-1 lg:gap-3 xl:gap-3">
