@@ -44,8 +44,12 @@ function Row({ title, movies }: Props) {
     to fix the issue of TRENDING NOW title 
     not displaying over the Banner Hero image */
 
-    <div className="relative h-80 bottom-10 mb-14 space-y-0.5 md:space-y-2.5">
-      <h2 className="w-56 cursor-pointer text-sm font-semibold text-[#e5e5e5] transition duration-200 hover:text-white md:text-2xl">
+    <div className="relative md:h-80 lg:h-80 xl:h-80
+                    bottom-0 sm:bottom-10 md:bottom-10 lg:bottom-10 xl:bottom-10
+                    top-3
+                    mb-14
+                    space-y-0.5 md:space-y-2.5">
+      <h2 className="w-56 cursor-pointer text-xs font-medium md:font-semibold text-[#e5e5e5] transition duration-200 hover:text-white md:text-2xl">
         {title}
       </h2>
       <div className="group relative md:-ml-2">

@@ -21,11 +21,11 @@ function Banner({netflixOriginals}: Props) {
 
     console.log(movie);
 
-/*     function truncate(string: string, n: number) {
+    function truncate(string: string, n: number) {
         return string?.length > n ? string.substr(0, n - 1) + "..." : string;
       }
 
-      const { data } = useBillboard(); */
+      /* const { data } = useBillboard(); */
 
     return (
         <div className='relative h-[43.40vw]'>
@@ -44,54 +44,54 @@ function Banner({netflixOriginals}: Props) {
             </div>
 
             <div className="absolute
-            top-[26.5%] sm:top-[34.5%] md:top-[34.5%] lg:top-[36.5%] xl:top-[40%]
+            top-[26.5%] sm:top-[26.5%] md:top-[26.5%] lg:top-[26.5%] xl:top-[30%]
             ml-[1.04rem] sm:ml-[1.08rem] md:ml-[2.2rem] lg:ml-[2.84rem] xl:ml-[3.8rem]">
 
             <h1 className="
             text-white sm:text-white md:text-white lg:text-white xl:text-white
-            text-sm sm:text-xl md:text-4xl lg:text-5xl xl:text-6xl
+            text-sm sm:text-xl md:text-4xl lg:text-5xl xl:text-5xl
             h-full w-full
             tracking-tight
             font-extrabold
             drop-shadow-1xl">
-            {movie?.title || movie?.name || movie?.original_name}
+            {truncate(movie?.title || movie?.name || movie?.original_name, 26)}
             {/* {truncate(data?.title, 25)} */}
             </h1>
 
             {/* <p>{movie?.overview}</p> */}
             <h2 className="__description
-            text-[#e0e0e0]
-            text-[6px] md:text-[12px] lg:text-[15px] xl:text-[22px]
+            text-[#e0e0e0] text-shadow
+            text-[5px] sm:text-[12px] md:text-[12px] lg:text-[15px] xl:text-[22px]
             font-light
             mt-3 md:mt-5 lg:mt-5
-            w-[38%] sm:w-[42%] md:w-[38%] lg:w-[47%] xl:w-[37%]
-            drop-shadow-xl">{movie?.overview}</h2>
+            w-[52%] sm:w-[62%] md:w-[52%] lg:w-[37%] xl:w-[37%]
+            drop-shadow-xl">{truncate(movie?.overview, 225)}</h2>
             {/* {truncate(data?.description, 190)} */}
 
-            <div className="flex flex-row items-center mt-3 md:mt-8 gap-2 lg:gap-3 xl:gap-3">
+            <div className="flex flex-row items-center mt-3 md:mt-8 gap-1 lg:gap-3 xl:gap-3">
                     
                     <button 
                     className="flex flex-row items-center transition w-auto rounded-[4px]
                     bg-white bg-opacity-100 hover:bg-opacity-70
-                    py-0.5 sm:py-0.5 md:py-0.5 lg:py-1
-                    px-3.5 sm:px-3.5 md:px-3 lg:px-8 xl:px-8
-                    text-black font-black
-                    text-[10px] lg:text-[16px] xl:text-[22px]">
+                    py-0.4 sm:py-0.5 md:py-0.5 lg:py-1
+                    px-[11px] sm:px-3.5 md:px-3 lg:px-8 xl:px-8
+                    text-black font-semibold md:font-black lg:font-black xl:font-black
+                    text-[9px] lg:text-[16px] xl:text-[22px]">
 
-                        <BsFillPlayFill className="mr-1 h-6 w-6 md:h-8 md:w-8 lg:h-9 lg:w-9 xl:h-12 xl:w-12"/>
+                        <BsFillPlayFill className="mr-0.5 md:mr-1 lg:mr-1 xl:mr-1 h-5 w-5 md:h-8 md:w-8 lg:h-9 lg:w-9 xl:h-12 xl:w-12"/>
                         Play
 
                     </button>
 
                     <button 
-                    className="flex flex-row items-center transition w-auto rounded-[2px]
-                    bg-[#656a72] bg-opacity-100 hover:bg-opacity-70
-                    py-1.5 sm:py-1.5 md:py-1.5 lg:py-2.5 xl:py-2.5
-                    px-3.5 sm:px-3.5 md:px-5 lg:px-5 xl:px-8
-                    text-white font-black 
-                    text-[10px] lg:text-[16px] xl:text-[22px]">
+                    className="flex flex-row items-center transition w-auto rounded-[4px]
+                    bg-[#797a7b] bg-opacity-80 hover:bg-opacity-50
+                    py-[3.0px] sm:py-1.5 md:py-1.5 lg:py-2.5 xl:py-2.5
+                    px-[11px] sm:px-3.5 md:px-5 lg:px-5 xl:px-8
+                    text-white font-medium md:font-black lg:font-black xl:font-black
+                    text-[9px] lg:text-[16px] xl:text-[22px]">
 
-                        <AiOutlineInfoCircle className="mr-2 h-4 w-4 md:h-6 md:w-6 lg:h-8s lg:w-8 xl:h-9 xl:w-9"/>
+                        <AiOutlineInfoCircle className="mr-1.5 md:mr-2 lg:mr-2 xl:mr-2 h-3.5 w-3.5 md:h-6 md:w-6 lg:h-8s lg:w-8 xl:h-9 xl:w-9"/>
                         More Info
 
                     </button>
