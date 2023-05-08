@@ -31,8 +31,8 @@ function Banner({netflixOriginals}: Props) {
         <div className='relative h-[43.40vw]'>
 
             <div className='w-full 
-            h-[128.25vw] sm:h-[54.25vw] md:h-[54.25vw] lg:h-[56.25vw] xl:h-[56.25vw] 2xl:h-[48.25vw]
-            object-cover
+            h-[124.25vw] sm:h-[54.25vw] md:h-[54.25vw] lg:h-[56.25vw] xl:h-[56.25vw] 2xl:h-[48.25vw]
+            object-fill
             brightness-[70%]'>
             {/* <div className='absolute top-0 left-0 -z-10 h-[95vh] w-screen'> */}
                 <Image src={`${baseUrl}${movie?.backdrop_path || movie?.poster_path}`} 

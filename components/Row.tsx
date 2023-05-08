@@ -49,7 +49,7 @@ function Row({ title, movies }: Props) {
                     top-3
                     mb-14
                     space-y-0.5 md:space-y-2.5">
-      <h2 className="w-56 cursor-pointer text-xs font-medium md:font-semibold text-[#e5e5e5] transition duration-200 hover:text-white md:text-2xl">
+     {/*  <h2 className="w-56 cursor-pointer text-xs font-medium md:font-semibold text-[#e5e5e5] transition duration-200 hover:text-white md:text-2xl">
         {title}
       </h2>
       <div className="group relative md:-ml-2">
@@ -75,7 +75,7 @@ function Row({ title, movies }: Props) {
           cursor-pointer opacity-0 transition hover:scale-125 group-hover:opacity-100"
           onClick={() => handleClick('right')}
         />
-      </div>
+      </div> */}
     </div>
   )
 }
