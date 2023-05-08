@@ -49,7 +49,10 @@ function Row({ title, movies }: Props) {
                     top-64 md:top-3 lg:top-3 xl:top-3
                     mb-14 
                     space-y-0.5 md:space-y-2.5">
-      <h2 className="w-56 cursor-pointer text-lg md:text-2xl font-semibold md:font-semibold text-[#e5e5e5] transition duration-200 hover:text-white">
+      <h2 className="w-56 cursor-pointer 
+      text-2xl md:text-2xl 
+      font-semibold md:font-semibold 
+      text-[#e5e5e5] transition duration-200 hover:text-white">
         {title}
       </h2>
       <div className="group relative md:-ml-2">
