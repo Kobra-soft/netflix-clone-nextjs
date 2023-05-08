@@ -44,7 +44,7 @@ function Banner({netflixOriginals}: Props) {
 
             <div className="absolute
 
-            top-[36.5%] sm:top-[26.5%] md:top-[26.5%] lg:top-[26.5%] xl:top-[30%]
+            top-[56.5%] sm:top-[26.5%] md:top-[26.5%] lg:top-[26.5%] xl:top-[30%]
             ml-[1.04rem] sm:ml-[1.08rem] md:ml-[2.2rem] lg:ml-[2.84rem] xl:ml-[3.8rem]">
 
             <h1 className="

@@ -56,7 +56,7 @@ const toggleAccountMenu = useCallback(() => {
       <div className={`
       flex items-center transition duration-500 
       px-[0rem] sm:pl-[0rem] md:pl-7 lg:pl-[2.95rem] xl:pl-[3.75rem] 
-      py-[0px] sm:py-[0px] md:py-[0px] lg:py-[0px] xl:py-[0px]`}>
+      py-[15px] sm:py-[0px] md:py-[0px] lg:py-[0px] xl:py-[0px]`}>
         
         <img className="h-[0.95rem] sm:h-[0.95rem] md:h-[0.95rem] lg:h-[1.57rem]"  src="/images/logo.png" alt="" />
 

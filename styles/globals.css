@@ -50,8 +50,12 @@ h1 {
   font-family: 'NetflixSansLight'
 } */
 
-h3 {
+/* h3 {
   font-family: 'NetflixSansRegular'
+} */
+
+h3 {
+  font-family: 'NetflixSans'
 }
 
 .__description {

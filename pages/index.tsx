@@ -84,21 +84,21 @@ const Home = ({
         <main className="relative">
         {/* <Header/> */}
           {/* <Banner netflixOriginals={netflixOriginals} /> */}
-          <Banner netflixOriginals={netflixOriginals} />
+          <Banner netflixOriginals={scifiMovies} />
           <section className="pl-4 sm:pl-4 md:pl-9 lg:pl-11 xl:pl-14">
           <Row title="Trending Now" movies={trendingNow} />
-          <Row title="Netflix Originals" movies={netflixOriginals} />
           <Row title="Top Rated" movies={topRated} />
-          <Row title="Action Thrillers" movies={actionMovies} />
+          <Row title="Action" movies={actionMovies} />
+          <Row title="Horror" movies={horrorMovies} />
           {/* My List */}
           <Row title="Comedies" movies={comedyMovies} />
-          <Row title="Scary Movies" movies={horrorMovies} />
           {/* <Row title="Romance Movies" movies={romanceMovies} /> */}
           {/* <Row title="Documentaries" movies={documentaries} /> */}
 
           {/* <Row title="Animation" movies={animationMovies} /> */}
           <Row title="Family" movies={familyMovies} />
-          <Row title="Sci-Fi" movies={scifiMovies} />
+          <Row title="Netflix Originals" movies={netflixOriginals} />
+          <Row title="Sci-Fi & Fantasy" movies={scifiMovies} />
           </section>
         </main>
         { /* Modal */ }
