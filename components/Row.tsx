@@ -49,12 +49,12 @@ function Row({ title, movies }: Props) {
                     top-64 md:top-3 lg:top-3 xl:top-3
                     mb-14 
                     space-y-0.5 md:space-y-2.5">
-      <h2 className="w-56 cursor-pointer 
-      text-[18px] md:text-2xl 
-      font-black md:font-semibold 
+      <h3 className="w-56 cursor-pointer 
+      text-[22px] md:text-2xl lg:text-[26.5px]
+      tracking-wide
       text-[#e5e5e5] transition duration-200 hover:text-white">
         {title}
-      </h2>
+      </h3>
       <div className="group relative md:-ml-2">
         <HiOutlineChevronLeft
           className={`absolute top-0 bottom-0 left-2 z-40 m-auto
