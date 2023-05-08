@@ -32,24 +32,26 @@ function Banner({netflixOriginals}: Props) {
 
             <div className='w-full 
             h-[124.25vw] sm:h-[54.25vw] md:h-[54.25vw] lg:h-[56.25vw] xl:h-[56.25vw] 2xl:h-[48.25vw]
-            object-fill
+            object-cover
             brightness-[70%]'>
             {/* <div className='absolute top-0 left-0 -z-10 h-[95vh] w-screen'> */}
                 <Image src={`${baseUrl}${movie?.backdrop_path || movie?.poster_path}`} 
                 alt=''
                 fill
                 className=''
-                
                 />
             </div>
 
             <div className="absolute
-            top-[26.5%] sm:top-[26.5%] md:top-[26.5%] lg:top-[26.5%] xl:top-[30%]
+
+            top-[36.5%] sm:top-[26.5%] md:top-[26.5%] lg:top-[26.5%] xl:top-[30%]
             ml-[1.04rem] sm:ml-[1.08rem] md:ml-[2.2rem] lg:ml-[2.84rem] xl:ml-[3.8rem]">
 
             <h1 className="
             text-white sm:text-white md:text-white lg:text-white xl:text-white
-            text-sm sm:text-xl md:text-4xl lg:text-5xl xl:text-5xl
+
+            text-xl sm:text-xl md:text-4xl lg:text-5xl xl:text-5xl
+
             h-full w-full
             tracking-tight
             font-extrabold
@@ -62,10 +64,11 @@ function Banner({netflixOriginals}: Props) {
             {/* <p>{movie?.overview}</p> */}
             <h2 className="__description
             text-[#e0e0e0] text-shadow
-            text-[5px] sm:text-[12px] md:text-[12px] lg:text-[15px] xl:text-[22px]
+            text-[11px] sm:text-[12px] md:text-[12px] lg:text-[15px] xl:text-[22px]
             font-light
-            mt-3 md:mt-5 lg:mt-5
-            w-[52%] sm:w-[62%] md:w-[52%] lg:w-[37%] xl:w-[37%]
+            mt-1 md:mt-5 lg:mt-5
+
+            w-[82%] sm:w-[62%] md:w-[52%] lg:w-[37%] xl:w-[37%]
             drop-shadow-xl">{movie?.overview}</h2>
             {/* {truncate(movie?.overview, 225)}</h2> */}
             {/* {truncate(data?.description, 190)} */}

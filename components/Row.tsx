@@ -46,15 +46,15 @@ function Row({ title, movies }: Props) {
 
     <div className="relative md:h-80 lg:h-80 xl:h-80
                     bottom-0 sm:bottom-10 md:bottom-10 lg:bottom-10 xl:bottom-10
-                    top-3
-                    mb-14
+                    top-64 md:top-3 lg:top-3 xl:top-3
+                    mb-14 
                     space-y-0.5 md:space-y-2.5">
-     {/*  <h2 className="w-56 cursor-pointer text-xs font-medium md:font-semibold text-[#e5e5e5] transition duration-200 hover:text-white md:text-2xl">
+      <h2 className="w-56 cursor-pointer text-lg md:text-2xl font-semibold md:font-semibold text-[#e5e5e5] transition duration-200 hover:text-white">
         {title}
       </h2>
       <div className="group relative md:-ml-2">
         <HiOutlineChevronLeft
-          className={`absolute top-0 bottom-0 left-2 z-40 m-auto 
+          className={`absolute top-0 bottom-0 left-2 z-40 m-auto
           h-6 w-6 md:h-9 md:w-9 lg:h-12 lg:w-12 xl:h-14 xl:w-14
           cursor-pointer opacity-0 transition hover:scale-125 group-hover:opacity-100 ${
             !isMoved && 'hidden'
@@ -75,7 +75,7 @@ function Row({ title, movies }: Props) {
           cursor-pointer opacity-0 transition hover:scale-125 group-hover:opacity-100"
           onClick={() => handleClick('right')}
         />
-      </div> */}
+      </div>
     </div>
   )
 }
