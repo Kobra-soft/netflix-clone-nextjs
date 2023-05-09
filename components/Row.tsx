@@ -49,8 +49,10 @@ function Row({ title, movies }: Props) {
                     mb-7 md:mb-14 
                     space-y-0.5 md:space-y-2.5">
       <h3 className="w-56 cursor-pointer 
-      text-[17.333px] md:text-2xl lg:text-[25.5px]
-      tracking-[0.025rem] font-semibold
+      text-[17.666px] md:text-2xl lg:text-[25.5px]
+
+      tracking-[0.025rem] font-extrabold xl:font-thin
+
       text-[#ffffff] md:text-[#e5e5e5] transition duration-200 hover:text-white">
         {title}
       </h3>
