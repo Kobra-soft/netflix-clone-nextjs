@@ -51,7 +51,7 @@ function Row({ title, movies }: Props) {
       <h3 className="w-56 cursor-pointer 
       text-[17.666px] md:text-2xl lg:text-[25.5px]
 
-      tracking-[0.025rem] font-extrabold xl:font-thin
+      tracking-[0.025rem] font-black xl:font-thin
 
       text-[#ffffff] md:text-[#e5e5e5] transition duration-200 hover:text-white">
         {title}
