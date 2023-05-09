@@ -85,7 +85,7 @@ const Home = ({
         {/* <Header/> */}
           {/* <Banner netflixOriginals={netflixOriginals} /> */}
           <Banner netflixOriginals={scifiMovies} />
-          <section className="pl-4 sm:pl-4 md:pl-9 lg:pl-11 xl:pl-14">
+          <section className="pl-4 sm:pl-4 md:pl-9 lg:pl-11 xl:pl-[58px]">
           <Row title="Trending Now" movies={trendingNow} />
           <Row title="Top Rated" movies={topRated} />
           <Row title="Action" movies={actionMovies} />
@@ -100,6 +100,9 @@ const Home = ({
           <Row title="Netflix Originals" movies={netflixOriginals} />
           <Row title="Sci-Fi & Fantasy" movies={scifiMovies} />
           </section>
+{/*           <section className="bg-red-400 h-20">
+
+          </section> */}
         </main>
         { /* Modal */ }
 

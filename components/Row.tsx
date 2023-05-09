@@ -43,7 +43,6 @@ function Row({ title, movies }: Props) {
     /* #### added relative on parent div 
     to fix the issue of TRENDING NOW title 
     not displaying over the Banner Hero image */
-
     <div className="relative md:h-80 lg:h-80 xl:h-80
                     bottom-0 sm:bottom-10 md:bottom-10 lg:bottom-10 xl:bottom-10
                     top-64 md:top-3 lg:top-3 xl:top-3
