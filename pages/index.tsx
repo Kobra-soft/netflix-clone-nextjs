@@ -16,6 +16,9 @@ import requests from "@/utils/requests";
 import Banner from "@/components/Banner";
 import Row from "@/components/Row";
 
+
+// dont delete AUTH yet!!! keep and make sure sign in change still works!!!
+
 /* export async function getServerSideProps(context: NextPageContext) {
   const session = await getSession(context);
 
@@ -48,7 +51,6 @@ interface Props {
   horrorMovies: Movie[]
   romanceMovies: Movie[]
   documentaries: Movie[]
-
   animationMovies: Movie[]
   familyMovies: Movie[]
   scifiMovies: Movie[]
@@ -63,16 +65,13 @@ const Home = ({
   romanceMovies,
   topRated,
   trendingNow,
-
   animationMovies,
   familyMovies,
   scifiMovies,
 }: Props) => {
 
   return (
-
-      <div className="relative h-screen bg-gradient-to-b from-gray-900/10
-      to-[#010511] lg:h-[140vh]">
+      <div className="relative h-screen bg-gradient-to-b lg:h-[140vh]">
         <Head>
         <title>Netflix - Clone</title>
         <meta name="description" content="Developed By Kobra_Soft" />
@@ -80,9 +79,7 @@ const Home = ({
         </Head>
 
         <Header/>
-
         <main className="relative">
-        {/* <Header/> */}
           {/* <Banner netflixOriginals={netflixOriginals} /> */}
           <Banner netflixOriginals={scifiMovies} />
           <section className="pl-4 sm:pl-4 md:pl-9 lg:pl-11 xl:pl-[58px]">
@@ -94,18 +91,13 @@ const Home = ({
           <Row title="Comedies" movies={comedyMovies} />
           {/* <Row title="Romance Movies" movies={romanceMovies} /> */}
           {/* <Row title="Documentaries" movies={documentaries} /> */}
-
           {/* <Row title="Animation" movies={animationMovies} /> */}
           <Row title="Family" movies={familyMovies} />
           <Row title="Netflix Originals" movies={netflixOriginals} />
           <Row title="Sci-Fi & Fantasy" movies={scifiMovies} />
           </section>
-{/*           <section className="bg-red-400 h-20">
-
-          </section> */}
         </main>
         { /* Modal */ }
-
       </div>
     )
   }
@@ -123,7 +115,6 @@ export const getServerSideProps = async () => {
       horrorMovies,
       romanceMovies,
       documentaries,
-
       animationMovies,
       familyMovies,
       scifiMovies,
@@ -136,7 +127,6 @@ export const getServerSideProps = async () => {
       fetch(requests.fetchHorrorMovies).then((res) => res.json()),
       fetch(requests.fetchRomanceMovies).then((res) => res.json()),
       fetch(requests.fetchDocumentaries).then((res) => res.json()),
-
       fetch(requests.fetchAnimation).then((res) => res.json()),
       fetch(requests.fetchFamilyMovies).then((res) => res.json()),
       fetch(requests.fetchSciFiMovies).then((res) => res.json()),
@@ -152,7 +142,6 @@ export const getServerSideProps = async () => {
         horrorMovies: horrorMovies.results,
         romanceMovies: romanceMovies.results,
         documentaries: documentaries.results,
-
         animationMovies: animationMovies.results,
         familyMovies: familyMovies.results,
         scifiMovies: scifiMovies.results,
