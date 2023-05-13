@@ -1,11 +1,9 @@
 import { NextPageContext } from "next"
 import Head from "next/head";
 import Header from "@/components/Header";
-
 import { getSession} from "next-auth/react"
 import useCurrentUser from "@/hooks/useCurrentUser";
 import Navbar from "@/components/Navbar";
-
 import Billboard from "@/components/Billboard";
 import MovieList from "@/components/MovieList";
 import useMovieList from "@/hooks/useMovieList";
@@ -15,6 +13,10 @@ import { Movie } from '../typings'
 import requests from "@/utils/requests";
 import Banner from "@/components/Banner";
 import Row from "@/components/Row";
+
+import { useRecoilValue } from "recoil";
+import { modalState } from "@/atoms/modalAtom";
+import Modal from "@/components/Modal";
 
 
 // dont delete AUTH yet!!! keep and make sure sign in change still works!!!
@@ -70,6 +72,8 @@ const Home = ({
   scifiMovies,
 }: Props) => {
 
+  const showModal = useRecoilValue(modalState);
+
   return (
       <div className="relative h-screen bg-gradient-to-b lg:h-[140vh]">
         <Head>
@@ -97,7 +101,7 @@ const Home = ({
           <Row title="Sci-Fi & Fantasy" movies={scifiMovies} />
           </section>
         </main>
-        { /* Modal */ }
+        { showModal && <Modal/> }
       </div>
     )
   }

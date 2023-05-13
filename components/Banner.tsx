@@ -2,11 +2,11 @@ import { baseUrl } from '@/constants/movie';
 import { Movie } from '@/typings';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
-
 /* import useBillboard from "@/hooks/useBillboard"; */
-
 import { AiOutlineInfoCircle } from "react-icons/ai"
 import { BsFillPlayFill} from "react-icons/bs"
+import { useRecoilState } from 'recoil';
+import { modalState, movieState } from '@/atoms/modalAtom';
 
 interface Props {
     netflixOriginals: Movie[];
@@ -14,12 +14,14 @@ interface Props {
 
 function Banner({netflixOriginals}: Props) {
     const [movie, setMovie] = useState<Movie | null>(null);
+    const [showModal, setShowModal] = useRecoilState(modalState);
+    const [currentMovie, setCurrentMovie] = useRecoilState(movieState);
 
     useEffect(() => {
         setMovie(netflixOriginals[Math.floor(Math.random() * netflixOriginals.length)])
     }, [netflixOriginals])
 
-    console.log(movie);
+    /* console.log(movie); */
 
     function truncate(string: string, n: number) {
         return string?.length > n ? string.substr(0, n - 1) + "..." : string;
@@ -30,7 +32,7 @@ function Banner({netflixOriginals}: Props) {
     return (
         <div className='relative h-[43.40vw]'>
 
-            <div className='w-full 
+            <div className='w-full absolute
             h-[124.25vw] sm:h-[94.25vw] md:h-[54.25vw] lg:h-[56.25vw] xl:h-[56.25vw] 2xl:h-[56.25vw]
             object-cover
             brightness-[70%]'>
@@ -94,7 +96,12 @@ function Banner({netflixOriginals}: Props) {
                     py-[3.0px] sm:py-1.5 md:py-1.5 lg:py-2.5 xl:py-2.5
                     px-[11px] sm:px-3.5 md:px-5 lg:px-5 xl:px-8
                     text-white font-medium md:font-black lg:font-black xl:font-black
-                    text-[9px] lg:text-[16px] xl:text-[22px]">
+                    text-[9px] lg:text-[16px] xl:text-[22px]"
+                    onClick={() => {
+                        setCurrentMovie(movie);
+                        setShowModal(true)
+                    }}
+                    >
 
                         <AiOutlineInfoCircle className="mr-1.5 md:mr-2 lg:mr-2 xl:mr-2 h-3.5 w-3.5 md:h-6 md:w-6 lg:h-8s lg:w-8 xl:h-9 xl:w-9"/>
                         More Info
