@@ -13,6 +13,7 @@ const requests = {
   fetchAnimation: `${BASE_URL}/discover/movie?api_key=${API_KEY}&language=en-US&with_genres=16`,
   fetchFamilyMovies: `${BASE_URL}/discover/movie?api_key=${API_KEY}&language=en-US&with_genres=10751`,
   fetchSciFiMovies: `${BASE_URL}/discover/movie?api_key=${API_KEY}&language=en-US&with_genres=878&page=1`,
+  /* fetchSciFiMovies: `${BASE_URL}/discover/movie?api_key=${API_KEY}&language=en-US&with_genres=878&page=1`, */
 }
 
 export default requests
