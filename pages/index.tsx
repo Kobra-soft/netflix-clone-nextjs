@@ -1,25 +1,17 @@
-import { NextPageContext } from "next"
 import Head from "next/head";
 import Header from "@/components/Header";
 import { getSession} from "next-auth/react"
 import useCurrentUser from "@/hooks/useCurrentUser";
-import Navbar from "@/components/Navbar";
 import Billboard from "@/components/Billboard";
 import MovieList from "@/components/MovieList";
 import useMovieList from "@/hooks/useMovieList";
-import { Text } from "@chakra-ui/react";
-
 import { Movie } from '../typings'
 import requests from "@/utils/requests";
 import Banner from "@/components/Banner";
 import Row from "@/components/Row";
-
 import { useRecoilValue } from "recoil";
 import { modalState } from "@/atoms/modalAtom";
 import Modal from "@/components/Modal";
-
-
-// dont delete AUTH yet!!! keep and make sure sign in change still works!!!
 
 /* export async function getServerSideProps(context: NextPageContext) {
   const session = await getSession(context);
@@ -43,7 +35,6 @@ import Modal from "@/components/Modal";
   const { data: movies = [] } = useMovieList();
 } */
 
-
 interface Props {
   netflixOriginals: Movie[]
   trendingNow: Movie[]
@@ -62,14 +53,14 @@ const Home = ({
   netflixOriginals,
   actionMovies,
   comedyMovies,
-  documentaries,
   horrorMovies,
-  romanceMovies,
   topRated,
   trendingNow,
-  animationMovies,
   familyMovies,
   scifiMovies,
+  romanceMovies,
+  documentaries,
+  animationMovies
 }: Props) => {
 
   const showModal = useRecoilValue(modalState);
@@ -84,21 +75,20 @@ const Home = ({
 
         <Header/>
         <main className="relative">
-          {/* <Banner netflixOriginals={netflixOriginals} /> */}
           <Banner netflixOriginals={trendingNow} />
           <section className="pl-4 sm:pl-4 md:pl-9 lg:pl-11 xl:pl-[58px]">
           <Row title="Trending Now" movies={trendingNow} />
           <Row title="Top Rated" movies={topRated} />
+          {/* My List */}
           <Row title="Action" movies={actionMovies} />
           <Row title="Horror" movies={horrorMovies} />
-          {/* My List */}
           <Row title="Comedies" movies={comedyMovies} />
-          {/* <Row title="Romance Movies" movies={romanceMovies} /> */}
-          {/* <Row title="Documentaries" movies={documentaries} /> */}
-          {/* <Row title="Animation" movies={animationMovies} /> */}
           <Row title="Family" movies={familyMovies} />
           <Row title="Netflix Originals" movies={netflixOriginals} />
           <Row title="Sci-Fi & Fantasy" movies={scifiMovies} />
+          {/* <Row title="Romance Movies" movies={romanceMovies} /> */}
+          {/* <Row title="Documentaries" movies={documentaries} /> */}
+          {/* <Row title="Animation" movies={animationMovies} /> */}
           </section>
         </main>
         { showModal && <Modal/> }
