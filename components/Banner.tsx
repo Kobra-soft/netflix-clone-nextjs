@@ -46,15 +46,15 @@ function Banner({netflixOriginals}: Props) {
 
             <div className="absolute
 
-            top-[56.5%] sm:top-[56.5%] md:top-[26.5%] lg:top-[22.5%] xl:top-[22.5%]
+            top-[56.5%] sm:top-[56.5%] md:top-[22.5%] lg:top-[22.5%] xl:top-[22.5%]
             ml-[1.04rem] sm:ml-[1.08rem] md:ml-[2.2rem] lg:ml-[2.84rem] xl:ml-[3.8rem]">
 
             <h1 className="
             text-white sm:text-white md:text-white lg:text-white xl:text-white
 
-            text-xl sm:text-xl md:text-4xl lg:text-5xl xl:text-5xl
+            text-2xl sm:text-2xl md:text-4xl lg:text-5xl xl:text-5xl
 
-            h-full w-full
+            h-full max-w-fit
             tracking-tight
             font-extrabold
             drop-shadow-1xl">
@@ -68,20 +68,21 @@ function Banner({netflixOriginals}: Props) {
             text-[#e0e0e0] text-shadow
             text-[13.666px] sm:text-[13.666px] md:text-[15px] lg:text-[20px] xl:text-[22px]
             font-light
-            mt-1 md:mt-5 lg:mt-5
 
-            w-[62%] sm:w-[62%] md:w-[62%] lg:w-[66%] xl:w-[42%]
+            mt-3 md:mt-3 lg:mt-6
+
+            w-[78%] sm:w-[62%] md:w-[62%] lg:w-[66%] xl:w-[42%]
 
             drop-shadow-xl">{movie?.overview}</h2>
             {/* {truncate(movie?.overview, 225)}</h2> */}
             {/* {truncate(data?.description, 190)} */}
 
-            <div className="flex flex-row items-center mt-3 md:mt-8 gap-1 lg:gap-3 xl:gap-3">
+            <div className="flex flex-row items-center mt-5 md:mt-5 lg:mt-7 gap-2 lg:gap-2.5 xl:gap-3">
                     
                     <button 
                     className="flex flex-row items-center transition w-auto rounded-[4px]
                     bg-white bg-opacity-100 hover:bg-opacity-70
-                    py-0.4 sm:py-0.5 md:py-0.5 lg:py-1
+                    py-[0.4rem] sm:py-[0.4rem] md:py-0.5 lg:py-1
                     px-[11px] sm:px-3.5 md:px-3 lg:px-8 xl:px-8
                     text-black font-semibold md:font-black lg:font-black xl:font-black
                     text-[9px] lg:text-[16px] xl:text-[22px]">
@@ -94,7 +95,7 @@ function Banner({netflixOriginals}: Props) {
                     <button 
                     className="flex flex-row items-center transition w-auto rounded-[4px]
                     bg-[#797a7b] bg-opacity-80 hover:bg-opacity-50
-                    py-[3.0px] sm:py-1.5 md:py-1.5 lg:py-2.5 xl:py-2.5
+                    py-[0.58rem] sm:py-[0.59rem] md:py-1.5 lg:py-2.5 xl:py-2.5
                     px-[11px] sm:px-3.5 md:px-5 lg:px-5 xl:px-8
                     text-white font-medium md:font-black lg:font-black xl:font-black
                     text-[9px] lg:text-[16px] xl:text-[22px]"
