@@ -75,7 +75,7 @@ const Home = ({
 
         <Header/>
         <main className="relative">
-          <Banner netflixOriginals={trendingNow} />
+          <Banner netflixOriginals={scifiMovies} />
           <section className="pl-4 sm:pl-4 md:pl-9 lg:pl-11 xl:pl-[58px]">
           <Row title="Trending Now" movies={trendingNow} />
           <Row title="Top Rated" movies={topRated} />
