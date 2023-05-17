@@ -46,7 +46,7 @@ function Banner({netflixOriginals}: Props) {
 
             <div className="absolute
 
-            top-[56.5%] sm:top-[26.5%] md:top-[26.5%] lg:top-[26.5%] xl:top-[30%]
+            top-[56.5%] sm:top-[56.5%] md:top-[26.5%] lg:top-[22.5%] xl:top-[22.5%]
             ml-[1.04rem] sm:ml-[1.08rem] md:ml-[2.2rem] lg:ml-[2.84rem] xl:ml-[3.8rem]">
 
             <h1 className="
@@ -66,11 +66,12 @@ function Banner({netflixOriginals}: Props) {
             {/* <p>{movie?.overview}</p> */}
             <h2 className="__description
             text-[#e0e0e0] text-shadow
-            text-[11px] sm:text-[12px] md:text-[12px] lg:text-[15px] xl:text-[22px]
+            text-[13.666px] sm:text-[13.666px] md:text-[15px] lg:text-[20px] xl:text-[22px]
             font-light
             mt-1 md:mt-5 lg:mt-5
 
-            w-[82%] sm:w-[62%] md:w-[52%] lg:w-[37%] xl:w-[37%]
+            w-[62%] sm:w-[62%] md:w-[62%] lg:w-[66%] xl:w-[42%]
+
             drop-shadow-xl">{movie?.overview}</h2>
             {/* {truncate(movie?.overview, 225)}</h2> */}
             {/* {truncate(data?.description, 190)} */}
