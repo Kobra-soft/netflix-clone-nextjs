@@ -1,18 +1,11 @@
 import Image from 'next/image'
-/* import { BellIcon, SearchIcon } from '@heroicons/react/solid' */
-import {BiSearchAlt2, BiBell } from "react-icons/bi"
 /* import useAuth from '../hooks/useAuth' */
 import { useCallback, useEffect, useState } from 'react'
 import Link from 'next/link'
 /* import BasicMenu from './BasicMenu' */
-
-// testing Github out!!!
-
 import { AiFillCaretDown } from "react-icons/ai"
-
 import NetflixSearchLogo from "./NetflixSearchLogo"
 import NetflixBellLogo from "./NetflixBellLogo";
-
 import NavbarItem from "./NavbarItem";
 import MobileMenu from "./mobileMenu";
 import NavbarItemHome from "./NavBarItemHome";
@@ -82,8 +75,6 @@ const toggleAccountMenu = useCallback(() => {
                     <MobileMenu visible={showMobileMenu}/>
             </div>
       </div>
-
-
                 <div className="
                 flex justify-end space-x-0 items-center
                  gap-4 sm:gap-4 md:gap-4 lg:gap-5 xl:gap-5
@@ -107,25 +98,6 @@ const toggleAccountMenu = useCallback(() => {
                     <AccountMenu visible={showAccountMenu}/>
                     </div>
                 </div>
-
-
-{/*         <div className="flex items-center space-x-4 text-sm font-light">
-                
-                <BiSearchAlt2 className="sm hidden h-6 w-6 sm:inline" />
-
-                <p className="hidden lg:inline">Kids</p>
-
-                <BiBell className="h-6 w-6" />
-
-                <Link href="/account">
-                  <img
-                    src="https://rb.gy/g1pwyx"
-                    alt=""
-                    className="cursor-pointer rounded"
-                  />
-                </Link>
-          </div> */}
-
     </header>
   )
 }
