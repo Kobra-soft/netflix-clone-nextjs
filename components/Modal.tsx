@@ -61,7 +61,7 @@ function Modal() {
     >
         <>
         <button onClick={handleClose}
-                className="modalButton absolute right-5 top-5 !z-40 h-9 w-9 bg-[#181818] hover:bg-[#181818]">
+                className="modalXButton absolute right-5 top-5 !z-40 h-9 w-9 bg-[#181818] hover:bg-[#181818]">
           <XMarkIcon className="h-6 w-6" />
         </button>
 
@@ -78,26 +78,26 @@ function Modal() {
 
         <div className="absolute bottom-10 flex w-full items-center justify-between px-10">
           <div className="flex space-x-2">
-            <button className="flex items-center gap-x-2 rounded bg-white px-8 text-xl
+            <button className="flex items-center gap-x-2 rounded bg-white px-5
             font-bold text-black transition hover:bg-[#e6e6e6]">
-              <FaPlay className="h-7 w-7 text-black" />
+              <FaPlay className="h-4 w-4 md:h-4 md:w-4 lg:h-7 lg:w-7" />
               Play
             </button>
 
             <button className="modalButton">
-              <PlusIcon className="h-7 w-7" />
+              <PlusIcon className="h-4 w-4 md:h-5 md:w-5 lg:h-7 lg:w-7" />
             </button>
 
             <button className="modalButton">
-              <FaThumbsUp className="h-5 w-5" />
+              <FaThumbsUp className="h-4 w-4 md:h-3 md:w-3 lg:h-4 lg:w-4" />
             </button>
           </div>
 
-          <button onClick={() => setMuted(!muted)}>
+          <button className="modalButton" onClick={() => setMuted(!muted)}>
             {muted ? (
-              <BsVolumeOff className="h-11 w-11"/>
+              <BsVolumeOff className="h-4 w-4 md:h-5 md:w-5 lg:h-7 lg:w-7"/>
             ) : (
-              <BsVolumeUp className="h-11 w-11"/>
+              <BsVolumeUp className="h-4 w-4 md:h-5 md:w-5 lg:h-7 lg:w-7"/>
             )}
           </button>
         </div>
@@ -105,8 +105,8 @@ function Modal() {
 
         <div className="flex space-x-16 rounded-b-md bg-[#181818] px-10 py-8">
           <div className="space-y-6 text-lg">
-            <div className="flex items-center space-x-2 text-sm">
-              <p className="font-semibold text-green-400">
+            <div className="flex items-center space-x-2 text-base">
+              <p className="font-medium text-green-400">
                 {movie!.vote_average * 10}% Match
               </p>
               <p className="font-light">

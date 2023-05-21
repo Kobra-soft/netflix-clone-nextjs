@@ -23,10 +23,12 @@
 }
 
 .modalButton {
-  @apply flex h-11 w-11 items-center justify-center rounded-full border-2 border-[gray] bg-[#2a2a2a/60] transition hover:border-white hover:bg-white/10;
+  @apply flex h-8 w-8 lg:h-10 lg:w-10 items-center justify-center rounded-full border-2 border-[gray] bg-[#2a2a2a/60] transition hover:border-white hover:bg-white/10;
 }
 
-
+.modalXButton {
+  @apply flex items-center justify-center rounded-full border-[1px] border-[gray] bg-[#2a2a2a/60] transition hover:border-white hover:bg-white/10;
+}
 
 @font-face {
   font-family: NetflixSansLight;

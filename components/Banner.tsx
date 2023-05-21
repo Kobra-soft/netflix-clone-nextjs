@@ -51,10 +51,8 @@ function Banner({netflixOriginals}: Props) {
 
             <h1 className="
             text-white sm:text-white md:text-white lg:text-white xl:text-white
-
             text-2xl sm:text-2xl md:text-4xl lg:text-5xl xl:text-5xl
-
-            h-full max-w-fit
+            h-full max-w-fit mr-4
             tracking-tight
             font-extrabold
             drop-shadow-1xl">
@@ -82,12 +80,12 @@ function Banner({netflixOriginals}: Props) {
                     <button 
                     className="flex flex-row items-center transition w-auto rounded-[4px]
                     bg-white bg-opacity-100 hover:bg-opacity-70
-                    py-[0.3rem] sm:py-[0.4rem] md:py-0.5 lg:py-1
-                    px-[18px] sm:px-3.5 md:px-3 lg:px-8 xl:px-8
+                    py-[0.13rem] sm:py-[0.13rem] md:py-0.5 lg:py-1
+                    px-[14px] sm:px-4 md:px-3 lg:px-8 xl:px-8
                     text-black font-semibold md:font-black lg:font-black xl:font-black
-                    text-[11px] lg:text-[16px] xl:text-[22px]">
+                    text-[11px] sm:text-[13.333px] lg:text-[16px] xl:text-[22px]">
 
-                        <BsFillPlayFill className="mr-0.5 md:mr-1 lg:mr-1 xl:mr-1 h-5 w-5 md:h-8 md:w-8 lg:h-9 lg:w-9 xl:h-12 xl:w-12"/>
+                        <BsFillPlayFill className="mr-0.5 md:mr-1 lg:mr-1 xl:mr-1 h-6 w-6 sm:h-8 sm:w-8 md:h-8 md:w-8 lg:h-9 lg:w-9 xl:h-12 xl:w-12"/>
                         Play
 
                     </button>
@@ -95,17 +93,17 @@ function Banner({netflixOriginals}: Props) {
                     <button 
                     className="flex flex-row items-center transition w-auto rounded-[4px]
                     bg-[#797a7b] bg-opacity-80 hover:bg-opacity-50
-                    py-[0.48rem] sm:py-[0.59rem] md:py-1.5 lg:py-2.5 xl:py-2.5
-                    px-[22px] sm:px-3.5 md:px-5 lg:px-5 xl:px-8
-                    text-white font-medium md:font-black lg:font-black xl:font-black
-                    text-[11px] lg:text-[16px] xl:text-[22px]"
+                    py-[0.26rem] sm:py-[0.38rem] md:py-[0.28rem] lg:py-[0.38rem] xl:py-2.5
+                    px-[14px] sm:px-5 md:px-5 lg:px-5 xl:px-8
+                    text-white font-medium sm:font-medium md:font-black lg:font-black xl:font-black
+                    text-[11px] sm:text-[13.333px] lg:text-[16px] xl:text-[22px]"
                     onClick={() => {
                         setCurrentMovie(movie);
                         setShowModal(true)
                     }}
                     >
 
-                        <AiOutlineInfoCircle className="mr-1.5 md:mr-2 lg:mr-2 xl:mr-2 h-3.5 w-3.5 md:h-6 md:w-6 lg:h-8s lg:w-8 xl:h-9 xl:w-9"/>
+                        <AiOutlineInfoCircle className="mr-1.5 md:mr-2 lg:mr-2 xl:mr-2 h-5 w-5 sm:h-6 sm:w-6 md:h-7 md:w-7 lg:h-8 lg:w-8 xl:h-9 xl:w-9"/>
                         More Info
 
                     </button>

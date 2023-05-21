@@ -10,6 +10,8 @@ import NavbarItem from "./NavbarItem";
 import MobileMenu from "./mobileMenu";
 import NavbarItemHome from "./NavBarItemHome";
 import AccountMenu from "./AccountMenu";
+import { request } from 'https'
+import { background } from '@chakra-ui/react'
 
 function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -53,15 +55,16 @@ const toggleAccountMenu = useCallback(() => {
         
         <img className="h-[0.95rem] sm:h-[0.95rem] md:h-[0.95rem] lg:h-[1.57rem]"  src="/images/logo.png" alt="" />
 
-        <div className="
+        <div
+        className="p-1 hidden md:flex lg:flex
         ml-[2.88rem] sm:ml-[1.40rem] md:ml-[1.6rem] xl:ml-[2.80rem]
-        gap-5 md:gap-4.5 xl:gap-5 hidden md:flex lg:flex">
-            <NavbarItemHome label="Home"/>
-            <NavbarItem label="Series" />
-            <NavbarItem label="Films" />
-            <NavbarItem label="New & Popular" />
-            <NavbarItem label="My List" />
-            <NavbarItem label="Browse by Languages" />
+        gap-5 md:gap-4.5 xl:gap-5">
+            <div onClick={toggleAccountMenu}><NavbarItemHome label="Home"/></div>
+            <div /* onClick={} */><NavbarItem label="Series" /></div>
+            <div /* onClick={} */><NavbarItem label="Films" /></div>
+            <div /* onClick={} */><NavbarItem label="New & Popular" /></div>
+            <div /* onClick={} */><NavbarItem label="My List" /></div>
+            <div /* onClick={} */><NavbarItem label="Browse by Languages" /></div>
         </div>
             <div 
                 onClick={toggleMobileMenu}
