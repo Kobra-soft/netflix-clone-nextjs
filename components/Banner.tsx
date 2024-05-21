@@ -83,7 +83,13 @@ function Banner({netflixOriginals}: Props) {
                     py-[0.13rem] sm:py-[0.13rem] md:py-0.5 lg:py-1
                     px-[14px] sm:px-4 md:px-3 lg:px-8 xl:px-8
                     text-black font-semibold md:font-black lg:font-black xl:font-black
-                    text-[11px] sm:text-[13.333px] lg:text-[16px] xl:text-[22px]">
+                    text-[11px] sm:text-[13.333px] lg:text-[16px] xl:text-[22px]"
+                    onClick={() => {
+                        setCurrentMovie(movie);
+                        setShowModal(true)
+                    }}
+                    >
+
 
                         <BsFillPlayFill className="mr-0.5 md:mr-1 lg:mr-1 xl:mr-1 h-6 w-6 sm:h-8 sm:w-8 md:h-8 md:w-8 lg:h-9 lg:w-9 xl:h-12 xl:w-12"/>
                         Play

@@ -62,7 +62,8 @@ h3 {
 }
 
 p {
-  font-family: 'NetflixSansLight'
+  font-family: 'NetflixSansLight';
+  font-weight: 100;
 }
 
 #__next {
