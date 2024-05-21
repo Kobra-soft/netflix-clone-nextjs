@@ -49,6 +49,21 @@
   src: url('/fonts/NetflixSans-Bold.otf');
 } 
 
+@font-face {
+  font-family: BebasNeueRegular;
+  src: url('/fonts/BebasNeue-Regular.ttf');
+}
+
+@font-face {
+  font-family: PacificoRegular;
+  src: url('/fonts/Pacifico-Regular.ttf');
+}
+
+@font-face {
+  font-family: CircularStd-Book;
+  src: url('/fonts/CircularStd-Book.otf');
+}
+
 h1 {
   font-family: 'NetflixSansMedium'
 }
@@ -62,7 +77,10 @@ h3 {
 }
 
 p {
-  font-family: 'NetflixSansLight';
+  /* font-family: 'NetflixSansLight'; */
+  /* font-family: 'PacificoRegular'; */
+  /* font-family: 'BebasNeueRegular'; */
+  font-family: 'CircularStd-Book';
   font-weight: 100;
 }
 

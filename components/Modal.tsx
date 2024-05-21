@@ -59,7 +59,7 @@ function Modal() {
     <MuiModal
       open={showModal}
       onClose={handleClose}
-      className="fixed !top-7 left-0 right-0 z-50 mx-auto w-full max-w-5xl overflow-hidden overflow-y-scroll rounded-md scrollbar-hide"
+      className="fixed !top-8 left-0 right-0 z-50 mx-auto w-full max-w-[973px] overflow-hidden overflow-y-scroll rounded-md scrollbar-hide"
     >
       <>
         <button
@@ -109,7 +109,7 @@ function Modal() {
           </div>
         </div>
 
-        <div className="flex space-x-16 rounded-b-md bg-[#181818] px-10 py-8">
+        <div className="flex space-x-16 rounded-b-md bg-[#181818] px-10 py-8 cursor-default">
           <div className="space-y-6 text-lg">
             <div className="flex items-center space-x-2 text-base">
               <p className="font-medium text-green-400">
@@ -127,7 +127,7 @@ function Modal() {
             </div>
 
             <div className="flex flex-col gap-x-10 gap-y-4 md:flex-row">
-              <p className="w-6/6 md:w-5/6">{movie?.overview}</p>
+              <p className="w-6/6 md:w-3/5 text-[16.666px]">{movie?.overview}</p>
               <div className="flex flex-col space-y-3 text-sm">
                 <div>
                   <span className="text-[gray]">Genres: </span>
