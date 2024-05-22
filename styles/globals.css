@@ -55,34 +55,9 @@
 }
 
 @font-face {
-  font-family: PacificoRegular;
-  src: url('/fonts/Pacifico-Regular.ttf');
-}
-
-@font-face {
-  font-family: CircularStd-Book;
-  src: url('/fonts/CircularStd-Book.otf');
-}
-
-@font-face {
-  font-family: Khalid;
-  src: url('/fonts/Khalid.ttf');
-}
-
-/* @font-face {
-  font-family: NunitoSansLight;
-  src: url('/fonts/NunitoSans_7pt-Light.ttf');
-} */
-
-@font-face {
   font-family: NunitoSansLight;
   src: url('/fonts/NunitoSans_10pt-Light.ttf');
 }
-
-/* @font-face {
-  font-family: NunitoSansExtraLight;
-  src: url('/fonts/NunitoSans_7pt-ExtraLight.ttf');
-} */
 
 @font-face {
   font-family: NunitoSansExtraLight;
@@ -102,22 +77,10 @@ h3 {
 }
 
 p {
-  /* font-family: 'NetflixSansLight'; */
-  /* font-family: 'PacificoRegular'; */
-  /* font-family: 'BebasNeueRegular'; */
-  /* font-family: 'CircularStd-Book'; */
-  /* font-family: 'Khalid'; */
-  /* font-family: 'NunitoSansLight'; */
   font-family: 'NunitoSansExtraLight';
   font-weight: 500;
 }
 span {
-  /* font-family: 'NetflixSansLight'; */
-  /* font-family: 'PacificoRegular'; */
-  /* font-family: 'BebasNeueRegular'; */
-  /* font-family: 'CircularStd-Book'; */
-  /* font-family: 'Khalid'; */
-  /* font-family: 'NunitoSansLight'; */
   font-family: 'NunitoSansLight';
   font-weight: 500;
 }
@@ -131,7 +94,6 @@ h6 {
   font-weight: 100;
   font-size: 0.99rem;
 }
-
 
 .inline-element {
   display: inline;
