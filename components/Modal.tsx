@@ -69,7 +69,7 @@ function Modal() {
           <XMarkIcon className="h-6 w-6" />
         </button>
 
-        <div className="relative pt-[56.25%]">
+        <div className="relative pt-[53.90%]">
           <ReactPlayer
             url={`https://www.youtube.com/watch?v=${trailer}`}
             width="100%"
@@ -109,35 +109,49 @@ function Modal() {
           </div>
         </div>
 
-        <div className="flex space-x-16 rounded-b-md bg-[#181818] px-10 py-8 cursor-default">
+        <div
+          className="flex space-x-16 rounded-b-md bg-[#181818] px-11 py-8 
+        cursor-default"
+        >
           <div className="space-y-6 text-lg">
             <div className="flex items-center space-x-2 text-base">
-              <p className="font-medium text-green-400">
-                {movie!.vote_average * 10}% Match
-              </p>
-              <p className="font-light">
-                {movie?.release_date || movie?.first_air_date}
-              </p>
+              <h6 className="text-[#46d369]">
+                {(movie!.vote_average * 10).toFixed(0)}% Match
+              </h6>
+              <h5 className="text-[#b5b5b5]">
+                {new Date(
+                  movie?.release_date || movie?.first_air_date || "2024-01-01"
+                ).getFullYear()}
+              </h5>
               <div
-                className="flex h-4 items-center justify-center rounded 
-              border border-white/40 px-1.5 text-xs"
+                className="flex h-4 items-center justify-center rounded-[2.5px] 
+              border-[0.1px] border-[#b2b2b2]/60 text-[#dddddd] px-[5px] text-[11px] pb-0.5"
               >
                 HD
               </div>
             </div>
 
-            <div className="flex flex-col gap-x-10 gap-y-4 md:flex-row">
-              <p className="w-6/6 md:w-3/5 text-[16.666px]">{movie?.overview}</p>
+            <div className="flex flex-col gap-x-11 gap-y-4 md:flex-row">
+              <p className="w-6/6 md:w-[62%] text-[16px] leading-6 ">
+                {movie?.overview}
+              </p>
               <div className="flex flex-col space-y-3 text-sm">
                 <div>
-                  <span className="text-[gray]">Genres: </span>
-                  {genres?.map((genre) => genre.name).join(", ")}
+                  <span className="text-[#6b6b6b]">Genres: </span>
+                  <h4 className="inline-element">
+                    {genres?.map((genre) => genre.name).join(", ")}
+                  </h4>
                 </div>
 
                 <div>
-                  <span className="text-[gray]">Original Language: </span>
-                  {movie?.original_language}
+                  <span className="text-[#6b6b6b]">Original Language: </span>
+                  <h4 className="inline-element">{movie?.original_language}</h4>
                 </div>
+
+                {/* <div>
+                  <span className="text-[#6b6b6b]">Cast: </span>
+                  {movie?.original_language}
+                </div> */}
               </div>
             </div>
           </div>
