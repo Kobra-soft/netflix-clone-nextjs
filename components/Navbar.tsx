@@ -62,11 +62,11 @@ const Navbar = () => {
             ${ShowBackground ? "bg-[#0b0b0b] bg-opacity-90" : ""}
             `}
       >
-        <img
+{/*         <img
           className="h-[0.92rem] sm:h-[1.0rem] md:h-[1.0rem] lg:h-[1.55rem]"
           src="/images/logo.png"
           alt=""
-        />
+        /> */}
         {/* <img className="h-[0.92rem] sm:h-[1.0rem] md:h-[1.0rem] lg:h-[1.55rem]" src="/images/Jackflix2.png" alt="" /> */}
 
         <div
