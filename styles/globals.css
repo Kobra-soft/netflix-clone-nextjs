@@ -7,17 +7,16 @@
     @apply bg-[#141414] text-white;
     font-family: 'NetflixSansLight'
   }
+
   header {
-    @apply fixed top-0 z-40 flex w-full items-center justify-between transition-all 
-    sm:px-4 sm:py-1.5 px-4 py-1.5 md:px-2 md:py-1;
+    @apply fixed top-0 z-40 flex w-full items-center justify-between transition-all sm:px-4 sm:py-1.5 px-4 py-1.5 md:px-2 md:py-1;
   }
 }
 
 /* Custom class names */
 @layer components {
   .headerLink {
-    @apply cursor-pointer text-sm font-light text-[#e5e5e5] transition duration-[.4s]
-    hover:text-[#b3b3b3];
+    @apply cursor-pointer text-sm font-light text-[#e5e5e5] transition duration-[.4s] hover:text-[#b3b3b3];
   }
 }
 
@@ -32,22 +31,22 @@
 @font-face {
   font-family: NetflixSansLight;
   src: url('/fonts/NetflixSans-Light.otf');
-} 
+}
 
 @font-face {
   font-family: NetflixSansRegular;
   src: url('/fonts/NetflixSans-Regular.otf');
-} 
+}
 
 @font-face {
   font-family: NetflixSansMedium;
   src: url('/fonts/NetflixSans-Medium.otf');
-} 
+}
 
 @font-face {
   font-family: NetflixSansBold;
   src: url('/fonts/NetflixSans-Bold.otf');
-} 
+}
 
 @font-face {
   font-family: BebasNeueRegular;
@@ -80,6 +79,7 @@ p {
   font-family: 'NunitoSansExtraLight';
   font-weight: 500;
 }
+
 span {
   font-family: 'NunitoSansLight';
   font-weight: 500;
