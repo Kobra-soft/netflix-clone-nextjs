@@ -43,7 +43,6 @@ const Navbar = () => {
 
   return (
     <nav className="bg-black w-full fixed z-40">
-      {/* change all px values to pl padding left, as could not move the flex right (navbar items!!) */}
       <div
         className={`
             px-[1.04rem]
@@ -67,12 +66,6 @@ const Navbar = () => {
           src="/images/logo.png"
           alt=""
         /> */}
-        <img
-          className="h-[0.92rem] sm:h-[1.0rem] md:h-[1.0rem] lg:h-[1.55rem]"
-          src="/images/Jackflix2.png"
-          alt=""
-        />
-
         <div
           className="
                 flex-row

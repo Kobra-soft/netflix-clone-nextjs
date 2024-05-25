@@ -23,13 +23,9 @@ function Banner({ netflixOriginals }: Props) {
     );
   }, [netflixOriginals]);
 
-  /* console.log(movie); */
-
   function truncate(string: string, n: number) {
     return string?.length > n ? string.substr(0, n - 1) + "..." : string;
   }
-
-  /* const { data } = useBillboard(); */
 
   return (
     <div className="relative h-[43.40vw]">
@@ -39,7 +35,6 @@ function Banner({ netflixOriginals }: Props) {
             object-cover
             brightness-[70%]"
       >
-        {/* <div className='absolute top-0 left-0 -z-10 h-[95vh] w-screen'> */}
         <Image
           src={`${baseUrl}${movie?.backdrop_path || movie?.poster_path}`}
           alt=""
@@ -64,11 +59,8 @@ function Banner({ netflixOriginals }: Props) {
             drop-shadow-1xl"
         >
           {movie?.title || movie?.name || movie?.original_name}
-          {/* {truncate(movie?.title || movie?.name || movie?.original_name, 26)} */}
-          {/* {truncate(data?.title, 25)} */}
         </h1>
 
-        {/* <p>{movie?.overview}</p> */}
         <h2
           className="__description
             text-[#e0e0e0] text-shadow
@@ -83,8 +75,6 @@ function Banner({ netflixOriginals }: Props) {
         >
           {movie?.overview}
         </h2>
-        {/* {truncate(movie?.overview, 225)}</h2> */}
-        {/* {truncate(data?.description, 190)} */}
 
         <div className="flex flex-row items-center mt-5 md:mt-5 lg:mt-7 gap-2 lg:gap-2.5 xl:gap-3">
           <button

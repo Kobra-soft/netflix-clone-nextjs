@@ -17,9 +17,14 @@ const AccountMenu: React.FC<AccountMenuProps> = ({ visible }) => {
     <div className="bg-black/90 w-56 absolute top-12 right-0 py-5 flex-col flex border-[1px] border-[#282828]">
       <div className="flex flex-col gap-2.5">
         <div className="px-3 group/item flex flex-row gap-3 items-center w-full">
-          <img
+          {/* <img
             className="w-8 rounded-md"
             src="/images/default-squidgame2.png"
+            alt=""
+          ></img> */}
+          <img
+            className="w-8 rounded-md"
+            src="/images/default-red.png"
             alt=""
           ></img>
           <p className="text-[#dfe0e0] text-sm group-hover/item:underline">

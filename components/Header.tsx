@@ -52,9 +52,14 @@ function Header() {
       px-[0.04rem] sm:pl-[0.05rem] md:pl-7 lg:pl-[2.35rem] xl:pl-[3.35rem] 
       py-[15px] sm:py-[1.00rem] md:py-[0.58rem] lg:py-[1.11rem] xl:py-[1.11rem]`}
       >
-        <img
+        {/* <img
           className="h-[0.95rem] sm:h-[0.95rem] md:h-[0.95rem] lg:h-[1.57rem]"
           src="/images/logo.png"
+          alt=""
+        /> */}
+         <img
+          className="h-[0.95rem] sm:h-[0.95rem] md:h-[0.95rem] lg:h-[2.10rem]"
+          src="/images/Jackflix2.png"
           alt=""
         />
 
@@ -120,7 +125,8 @@ function Header() {
           className="flex flex-row items-center gap-2 cursor-pointer relative"
         >
           <div className="w-7 h-7 md:w-[1.96rem] md:h-[1.96rem] lg:w-[1.96rem] lg:h-[2rem] rounded-[0.24rem] overflow-hidden">
-            <img src="/images/default-squidgame2.png"></img>
+            {/* <img src="/images/default-squidgame2.png"></img> */}
+            <img src="/images/default-red.png"></img>
           </div>
 
           <AiFillCaretDown
