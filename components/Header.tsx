@@ -14,7 +14,9 @@ import { request } from "https";
 import { background } from "@chakra-ui/react";
 
 function Header() {
+  const [isHovered, setIsHovered] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isClicked, setIsClicked] = useState(false);
 
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   const [showAccountMenu, setShowAccountMenu] = useState(false);
@@ -49,23 +51,21 @@ function Header() {
       <div
         className={`
       flex items-center transition
-      px-[0.04rem] sm:pl-[0.05rem] md:pl-7 lg:pl-[2.35rem] xl:pl-[3.35rem] 
-      py-[1.25rem] sm:py-[1.25rem] md:py-[1.12rem] lg:py-[0.84rem] xl:py-[0.84rem]`}
+      px-[0.04rem] sm:pl-[0.05rem] md:pl-7 lg:pl-[2.35rem] xl:pl-[3.15rem] 
+      py-[0.40rem]                 md:py-[0.54rem] lg:py-[0.84rem] xl:py-[0.84rem]`}
       >
-        {/* <img
-          className="h-[0.95rem] sm:h-[0.95rem] md:h-[0.95rem] lg:h-[1.57rem]"
-          src="/images/logo.png"
+        <img
+          className={`h-[0.95rem] sm:h-[0.95rem] md:h-[0.95rem] lg:h-[2.10rem] cursor-pointer ${
+            isClicked ? "mr-[-11.5px]" : ""
+          }`}
+          src={isClicked ? "/images/Jackflix3.png" : "/images/Netflix3.png"}
           alt=""
-        /> */}
-         <img
-          className="h-[0.95rem] sm:h-[0.95rem] md:h-[0.95rem] lg:h-[2.10rem]"
-          src="/images/Jackflix2.png"
-          alt=""
+          onClick={() => setIsClicked(!isClicked)}
         />
 
         <div
-          className="p-1 hidden md:flex lg:flex
-        ml-[2.88rem] sm:ml-[1.40rem] md:ml-[1.6rem] xl:ml-[2.80rem]
+          className="p-1 hidden md:hidden lg:flex
+        ml-[2.88rem] sm:ml-[1.40rem] md:ml-[1.6rem] xl:ml-[2.38rem]
         gap-5 md:gap-4.5 xl:gap-5"
         >
           <div /* onClick={toggleAccountMenu} */>
@@ -89,12 +89,12 @@ function Header() {
         </div>
         <div
           onClick={toggleMobileMenu}
-          className="lg:hidden md:hidden flex flex-row justify-between pl-5 items-center gap-1 ml-0 cursor-pointer relative"
+          className="lg:hidden md:flex flex flex-row justify-between pl-5 items-center gap-1 ml-0 cursor-pointer relative"
         >
           <p
             className="
                   text-white tracking-[.044em] items-center
-                    text-[8.0px] md:text-[12.6px] lg:text-[13.3px]"
+                    text-[8.0px] md:text-[9.0px] lg:text-[13.333px]"
           >
             Browse
           </p>
