@@ -56,7 +56,7 @@ function Header() {
       >
         <img
           className={`h-[0.95rem] sm:h-[0.95rem] md:h-[0.95rem] lg:h-[2.10rem] cursor-pointer ${
-            isClicked ? "mr-[-11.5px]" : ""
+            isClicked ? "mr-[-11.5px]" : "mr-[0px]"
           }`}
           src={isClicked ? "/images/Jackflix3.png" : "/images/Netflix3.png"}
           alt=""
