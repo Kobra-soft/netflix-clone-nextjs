@@ -117,13 +117,13 @@ function Header() {
         className="
                 flex justify-end space-x-0 items-center
                  gap-4 sm:gap-4 md:gap-4 lg:gap-5 xl:gap-5
-                 md:pr-2 lg:pr-[2.8rem] xl:pr-[3.7rem]"
+                 md:pr-2 lg:pr-[2.8rem] xl:pr-[3.26rem]"
       >
-        <div className="hover:text-gray-300 cursor-pointer transition">
+        <div className="cursor-pointer transition">
           <NetflixSearchLogo />
         </div>
 
-        <div className="hover:text-gray-300 cursor-pointer transition">
+        <div className="cursor-pointer transition">
           <NetflixBellLogo />
         </div>
 
@@ -131,7 +131,8 @@ function Header() {
           onClick={toggleAccountMenu}
           className="flex flex-row items-center gap-2 cursor-pointer relative"
         >
-          <div className="w-7 h-7 md:w-[1.96rem] md:h-[1.96rem] lg:w-[1.85rem] lg:h-[1.85rem] rounded-[0.34rem] overflow-hidden">
+          <div className="w-7 h-7 md:w-[1.96rem] md:h-[1.96rem] lg:w-[1.85rem] lg:h-[1.85rem] 
+          rounded-[0.22rem] overflow-hidden">
             {/* <img src="/images/default-squidgame2.png"></img> */}
             <img src="/images/default-green.png"></img>
           </div>

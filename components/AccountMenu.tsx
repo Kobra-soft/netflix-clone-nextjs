@@ -1,6 +1,9 @@
 import useCurrentUser from "@/hooks/useCurrentUser";
 import { signOut } from "next-auth/react";
 import React from "react";
+import NetflixSearchLogo from "./NetflixSearchLogo";
+import NetflixPencilLogo from "./NetflixPencilLogo";
+import NetflixTransferProfileLogo from "./NetflixTransferProfileLogo";
 
 interface AccountMenuProps {
   visible?: boolean;
@@ -10,7 +13,6 @@ const AccountMenu: React.FC<AccountMenuProps> = ({ visible }) => {
   if (!visible) {
     return null;
   }
-
   /* const { data: user } = useCurrentUser(); */
 
   return (
@@ -23,7 +25,7 @@ const AccountMenu: React.FC<AccountMenuProps> = ({ visible }) => {
             alt=""
           ></img> */}
           <img
-            className="w-7 rounded-[0.34rem]"
+            className="w-7 rounded-[0.22rem]"
             src="/images/default-green.png"
             alt=""
           ></img>
@@ -33,7 +35,7 @@ const AccountMenu: React.FC<AccountMenuProps> = ({ visible }) => {
         </div>
         <div className="px-3 group/item flex flex-row gap-3 items-center w-full">
           <img
-            className="w-7 rounded-[0.34rem]"
+            className="w-7 rounded-[0.22rem]"
             src="/images/default-slate.png"
             alt=""
           ></img>
@@ -43,7 +45,7 @@ const AccountMenu: React.FC<AccountMenuProps> = ({ visible }) => {
         </div>
         <div className="px-3 group/item flex flex-row gap-3 items-center w-full">
           <img
-            className="w-7 rounded-[0.34rem]"
+            className="w-7 rounded-[0.22rem]"
             src="/images/default-blue.png"
             alt=""
           ></img>
@@ -53,7 +55,7 @@ const AccountMenu: React.FC<AccountMenuProps> = ({ visible }) => {
         </div>
         <div className="px-3 group/item flex flex-row gap-3 items-center w-full">
           <img
-            className="w-7 rounded-[0.34rem]"
+            className="w-7 rounded-[0.22rem]"
             src="/images/default-red.png"
             alt=""
           ></img>
@@ -61,24 +63,42 @@ const AccountMenu: React.FC<AccountMenuProps> = ({ visible }) => {
             {/* {user?.name} */}User 4 (Laura)
           </p>
         </div>
+
         <hr className="border-[#404749] border-1 my-2" />
-        <div className="px-14 py-1 text-[#dfe0e0] text-[13.666px] hover/item:underline">
-          Manage Profiles
-        </div>
-        <div className="px-14 py-1 text-[#dfe0e0] text-[13.666px] hover/item:underline">
-          Transfer Profile
-        </div>
-        <div className="px-14 py-1 text-[#dfe0e0] text-[13.666px] hover/item:underline">
-          Account
-        </div>
-        <div className="px-14 py-1 text-[#dfe0e0] text-[13.666px] hover/item:underline">
-          Help Centre
-        </div>
-        <hr className="border-[#404749] border-1 my-2" />
-        <div
-          /* onClick={() => signOut()} */ className="px-3 text-center text-[#dfe0e0] text-sm hover/item:underline"
-        >
-          Sign out of Netflix
+
+        <div className="flex flex-col gap-2.5 ">
+          <div className="flex items-center py-1 text-[#dfe0e0] text-[13.666px] hover:underline">
+            <div className="px-3">
+              <NetflixPencilLogo />
+            </div>
+            Manage Profiles
+          </div>
+          <div className="flex items-center py-1 text-[#dfe0e0] text-[13.666px] hover:underline">
+            <div className="px-3">
+              <NetflixTransferProfileLogo />
+            </div>
+            Transfer Profile
+          </div>
+          <div className="flex items-center py-1 text-[#dfe0e0] text-[13.666px] hover:underline">
+            <div className="px-3">
+              <NetflixSearchLogo />
+            </div>
+            Account
+          </div>
+          <div className="flex items-center py-1 text-[#dfe0e0] text-[13.666px] hover:underline">
+            <div className="px-3">
+              <NetflixSearchLogo />
+            </div>
+            Help Centre
+          </div>
+
+          <hr className="border-[#404749] border-1 my-2" />
+
+          <div
+            className="px-3 text-center text-[#dfe0e0] text-sm hover/item:underline"
+          >
+            Sign out of Netflix
+          </div>
         </div>
       </div>
     </div>
