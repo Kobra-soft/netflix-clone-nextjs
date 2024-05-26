@@ -23,6 +23,13 @@ function Header() {
   const [ShowBackground, setShowBackground] = useState(false);
 
   useEffect(() => {
+    const img1 = new window.Image();
+    const img2 = new window.Image();
+    img1.src = "/images/Jackflix3.png";
+    img2.src = "/images/Netflix3.png";
+  }, []);
+
+  useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
         setIsScrolled(true);
