@@ -48,9 +48,9 @@ function Header() {
     <header className={`${isScrolled && "bg-[#0e0e0e]"}`}>
       <div
         className={`
-      flex items-center transition duration-500 
+      flex items-center transition
       px-[0.04rem] sm:pl-[0.05rem] md:pl-7 lg:pl-[2.35rem] xl:pl-[3.35rem] 
-      py-[15px] sm:py-[1.00rem] md:py-[0.58rem] lg:py-[1.11rem] xl:py-[1.11rem]`}
+      py-[1.25rem] sm:py-[1.25rem] md:py-[1.12rem] lg:py-[0.84rem] xl:py-[0.84rem]`}
       >
         {/* <img
           className="h-[0.95rem] sm:h-[0.95rem] md:h-[0.95rem] lg:h-[1.57rem]"
@@ -68,7 +68,7 @@ function Header() {
         ml-[2.88rem] sm:ml-[1.40rem] md:ml-[1.6rem] xl:ml-[2.80rem]
         gap-5 md:gap-4.5 xl:gap-5"
         >
-          <div onClick={toggleAccountMenu}>
+          <div /* onClick={toggleAccountMenu} */>
             <NavbarItemHome label="Home" />
           </div>
           <div /* onClick={} */>
@@ -124,9 +124,9 @@ function Header() {
           onClick={toggleAccountMenu}
           className="flex flex-row items-center gap-2 cursor-pointer relative"
         >
-          <div className="w-7 h-7 md:w-[1.96rem] md:h-[1.96rem] lg:w-[1.96rem] lg:h-[2rem] rounded-[0.24rem] overflow-hidden">
+          <div className="w-7 h-7 md:w-[1.96rem] md:h-[1.96rem] lg:w-[1.85rem] lg:h-[1.85rem] rounded-[0.34rem] overflow-hidden">
             {/* <img src="/images/default-squidgame2.png"></img> */}
-            <img src="/images/default-red.png"></img>
+            <img src="/images/default-green.png"></img>
           </div>
 
           <AiFillCaretDown

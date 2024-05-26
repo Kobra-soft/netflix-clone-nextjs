@@ -82,7 +82,6 @@ const Navbar = () => {
           <NavbarItem label="New & Popular" />
           <NavbarItem label="My List" />
           <NavbarItem label="Browse by Languages" />
-          <NavbarItem label="Browse by Languages" />
         </div>
         <div
           onClick={toggleMobileMenu}
@@ -93,7 +92,7 @@ const Navbar = () => {
                 text-[8.0px] md:text-[12.6px] lg:text-[13.3px] 
                 tracking-[.044em] items-center"
           >
-            Browse2
+            Browse
           </p>
           <AiFillCaretDown
             className={`text-white ml-0 w-[0.82rem] h-4 transition ${

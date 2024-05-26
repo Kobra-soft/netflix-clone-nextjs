@@ -23,8 +23,8 @@ const AccountMenu: React.FC<AccountMenuProps> = ({ visible }) => {
             alt=""
           ></img> */}
           <img
-            className="w-8 rounded-md"
-            src="/images/default-red.png"
+            className="w-7 rounded-[0.34rem]"
+            src="/images/default-green.png"
             alt=""
           ></img>
           <p className="text-[#dfe0e0] text-sm group-hover/item:underline">
