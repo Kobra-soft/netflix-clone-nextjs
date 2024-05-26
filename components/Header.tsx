@@ -62,8 +62,8 @@ function Header() {
       py-[0.40rem]                 md:py-[0.54rem] lg:py-[0.84rem] xl:py-[0.84rem]`}
       >
         <img
-          className={`h-[0.95rem] sm:h-[0.95rem] md:h-[0.95rem] lg:h-[2.10rem] cursor-pointer ${
-            isClicked ? "mr-[-11.5px]" : "mr-[0px]"
+          className={`h-[1.25rem] sm:h-[1.55rem] md:h-[1.85rem] lg:h-[2.10rem] cursor-pointer ${
+            isClicked ? "mr-[-7px] sm:mr-[-8.75px] md:mr-[-10.50px] lg:mr-[-11.90px] xl:mr-[-11.90px]" : "mr-[0px]"
           }`}
           src={isClicked ? "/images/Jackflix3.png" : "/images/Netflix3.png"}
           alt=""

@@ -28,7 +28,37 @@ const AccountMenu: React.FC<AccountMenuProps> = ({ visible }) => {
             alt=""
           ></img>
           <p className="text-[#dfe0e0] text-sm group-hover/item:underline">
-            {/* {user?.name} */}User_1 (JackFlix)
+            {/* {user?.name} */}User 1 (Jack)
+          </p>
+        </div>
+        <div className="px-3 group/item flex flex-row gap-3 items-center w-full">
+          <img
+            className="w-7 rounded-[0.34rem]"
+            src="/images/default-slate.png"
+            alt=""
+          ></img>
+          <p className="text-[#dfe0e0] text-sm group-hover/item:underline">
+            {/* {user?.name} */}User 2 (Mum)
+          </p>
+        </div>
+        <div className="px-3 group/item flex flex-row gap-3 items-center w-full">
+          <img
+            className="w-7 rounded-[0.34rem]"
+            src="/images/default-blue.png"
+            alt=""
+          ></img>
+          <p className="text-[#dfe0e0] text-sm group-hover/item:underline">
+            {/* {user?.name} */}User 3 (Dad)
+          </p>
+        </div>
+        <div className="px-3 group/item flex flex-row gap-3 items-center w-full">
+          <img
+            className="w-7 rounded-[0.34rem]"
+            src="/images/default-red.png"
+            alt=""
+          ></img>
+          <p className="text-[#dfe0e0] text-sm group-hover/item:underline">
+            {/* {user?.name} */}User 4 (Laura)
           </p>
         </div>
         <hr className="border-[#404749] border-1 my-2" />
