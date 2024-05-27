@@ -59,7 +59,9 @@ function Modal() {
     <MuiModal
       open={showModal}
       onClose={handleClose}
-      className="fixed !top-8 left-0 right-0 z-50 mx-auto w-full max-w-[973px] overflow-hidden overflow-y-scroll rounded-md scrollbar-hide"
+      className="fixed !top-8 left-0 right-0 z-50 mx-auto 
+      w-full max-w-[973px] overflow-hidden overflow-y-scroll 
+      rounded-md scrollbar-hide"
     >
       <>
         <button
