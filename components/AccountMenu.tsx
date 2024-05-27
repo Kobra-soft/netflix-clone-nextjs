@@ -5,6 +5,7 @@ import NetflixSearchLogo from "./NetflixSearchLogo";
 import NetflixPencilLogo from "./NetflixPencilLogo";
 import NetflixTransferProfileLogo from "./NetflixTransferProfileLogo";
 import NetflixAccountLogo from "./NetflixAccountLogo";
+import NetflixHelpCentreLogo from "./NetflixHelpCentreLogo";
 
 interface AccountMenuProps {
   visible?: boolean;
@@ -88,7 +89,7 @@ const AccountMenu: React.FC<AccountMenuProps> = ({ visible }) => {
           </div>
           <div className="flex items-center py-1 text-[#dfe0e0] text-[13.666px] hover:underline">
             <div className="px-3">
-              <NetflixSearchLogo />
+              <NetflixHelpCentreLogo />
             </div>
             Help Centre
           </div>
