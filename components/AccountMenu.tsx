@@ -18,92 +18,94 @@ const AccountMenu: React.FC<AccountMenuProps> = ({ visible }) => {
   /* const { data: user } = useCurrentUser(); */
 
   return (
-    <div className="bg-black/90 w-56 absolute top-12 right-0 py-5 flex-col flex border-[1px] border-[#282828]">
+    <div className="bg-black/90 w-[13.70rem] absolute top-[51px] right-0 pt-4 flex-col flex 
+    border border-[#414142]/60">
       <div className="flex flex-col gap-2.5">
-        <div className="px-3 group/item flex flex-row gap-3 items-center w-full">
+        <div className="px-2.5 group/item flex flex-row gap-2 items-center w-full">
           {/* <img
             className="w-8 rounded-md"
             src="/images/default-squidgame2.png"
             alt=""
           ></img> */}
           <img
-            className="w-7 rounded-[0.22rem]"
+            className="w-[1.95rem] h-[1.95rem] rounded-[0.22rem]"
             src="/images/default-green.png"
             alt=""
           ></img>
-          <p className="text-[#dfe0e0] text-sm group-hover/item:underline">
+          <div className="text-[#dfe0e0] text-[13px] group-hover/item:underline">
             {/* {user?.name} */}User 1 (Jack)
-          </p>
+          </div>
         </div>
-        <div className="px-3 group/item flex flex-row gap-3 items-center w-full">
+        <div className="px-2.5 group/item flex flex-row gap-2 items-center w-full">
           <img
-            className="w-7 rounded-[0.22rem]"
+            className="w-[1.95rem] h-[1.95rem] rounded-[0.22rem]"
             src="/images/default-slate.png"
             alt=""
           ></img>
-          <p className="text-[#dfe0e0] text-sm group-hover/item:underline">
+          <div className="text-[#dfe0e0] text-[13px] group-hover/item:underline">
             {/* {user?.name} */}User 2 (Mum)
-          </p>
+          </div>
         </div>
-        <div className="px-3 group/item flex flex-row gap-3 items-center w-full">
+        <div className="px-2.5 group/item flex flex-row gap-2 items-center w-full">
           <img
-            className="w-7 rounded-[0.22rem]"
+            className="w-[1.95rem] h-[1.95rem] rounded-[0.22rem]"
             src="/images/default-blue.png"
             alt=""
           ></img>
-          <p className="text-[#dfe0e0] text-sm group-hover/item:underline">
+          <div className="text-[#dfe0e0] text-[13px] group-hover/item:underline">
             {/* {user?.name} */}User 3 (Dad)
-          </p>
+          </div>
         </div>
-        <div className="px-3 group/item flex flex-row gap-3 items-center w-full">
+        <div className="px-2.5 group/item flex flex-row gap-2 items-center w-full">
           <img
-            className="w-7 rounded-[0.22rem]"
+            className="w-[1.95rem] h-[1.95rem] rounded-[0.22rem]"
             src="/images/default-red.png"
             alt=""
           ></img>
-          <p className="text-[#dfe0e0] text-sm group-hover/item:underline">
+          <div className="text-[#dfe0e0] text-[13px] group-hover/item:underline">
             {/* {user?.name} */}User 4 (Laura)
-          </p>
+          </div>
         </div>
 
-        <hr className="border-[#404749] border-1 my-2" />
+        {/* <hr className="border-[#404749] border-1 my-2" /> */}
 
-        <div className="flex flex-col gap-2.5 ">
-          <div className="flex items-center py-1 text-[#dfe0e0] text-[13.666px] hover:underline">
+        <div className="flex flex-col gap-2.5 mt-0">
+          <div className="flex items-center mt-2 text-[#dfe0e0] text-[13px] hover:underline">
             <div className="px-3">
               <NetflixPencilLogo />
             </div>
             Manage Profiles
           </div>
-          <div className="flex items-center py-1 text-[#dfe0e0] text-[13.666px] hover:underline">
+          <div className="flex items-center py-0 text-[#dfe0e0] text-[13px] hover:underline">
             <div className="px-3">
               <NetflixTransferProfileLogo />
             </div>
             Transfer Profile
           </div>
-          <div className="flex items-center py-1 text-[#dfe0e0] text-[13.666px] hover:underline">
+          <div className="flex items-center py-0 text-[#dfe0e0] text-[13px] hover:underline">
             <div className="px-3">
               <NetflixAccountLogo />
             </div>
             Account
           </div>
-          <div className="flex items-center py-1 text-[#dfe0e0] text-[13.666px] hover:underline">
+          <div className="flex items-center py-0 text-[#dfe0e0] text-[13px] hover:underline">
             <div className="px-3">
               <NetflixHelpCentreLogo />
             </div>
             Help Centre
           </div>
 
-          <hr className="border-[#404749] border-1 my-2" />
+          <hr className="border-[#414142] border-1 mt-2" />
+        </div>
 
-          <div
-            className="px-3 text-center text-[#dfe0e0] text-sm hover/item:underline"
+      </div>
+      <div
+            className="py-3 text-center items-center text-[#dfe0e0] text-[13px] hover/item:underline"
           >
             Sign out of Netflix
           </div>
-        </div>
-      </div>
     </div>
+    
   );
 };
 
