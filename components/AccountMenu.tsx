@@ -67,9 +67,9 @@ const AccountMenu: React.FC<AccountMenuProps> = ({ visible }) => {
           </div>
         </div>
 
-        {/* <hr className="border-[#404749] border-1 my-2" /> */}
+        <hr className="border-[#414142] border-1 mt-2 sm:flex lg:hidden" />
 
-        <div className="flex flex-col gap-2.5 mt-0">
+        <div className="flex flex-col gap-2.5 mt-0 ml-0">
           <div className="flex items-center mt-2 text-[#dfe0e0] text-[13px] hover:underline">
             <div className="px-3">
               <NetflixPencilLogo />

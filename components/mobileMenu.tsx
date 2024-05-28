@@ -15,8 +15,8 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ visible }) => {
         bg-black/90
         w-[260px]
         absolute
-        top-[42px]
-        left-0 
+        top-[50px]
+        left-[-70px]
         flex-col
         border
         border-t-[2px]
