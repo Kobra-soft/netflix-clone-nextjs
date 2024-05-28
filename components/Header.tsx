@@ -63,7 +63,9 @@ function Header() {
       >
         <img
           className={`h-[1.25rem] sm:h-[1.55rem] md:h-[1.85rem] lg:h-[2.10rem] cursor-pointer ${
-            isClicked ? "mr-[-7px] sm:mr-[-8.75px] md:mr-[-10.50px] lg:mr-[-11.90px] xl:mr-[-11.90px]" : "mr-[0px]"
+            isClicked
+              ? "mr-[-7px] sm:mr-[-8.75px] md:mr-[-10.50px] lg:mr-[-11.90px] xl:mr-[-11.90px]"
+              : "mr-[0px]"
           }`}
           src={isClicked ? "/images/Jackflix3.png" : "/images/Netflix3.png"}
           alt=""
@@ -75,7 +77,7 @@ function Header() {
         ml-[2.88rem] sm:ml-[1.40rem] md:ml-[1.6rem] xl:ml-[2.38rem]
         gap-5 md:gap-4.5 xl:gap-5"
         >
-          <div /* onClick={toggleAccountMenu} */>
+          <div>
             <NavbarItemHome label="Home" />
           </div>
           <div /* onClick={} */>
@@ -96,6 +98,8 @@ function Header() {
         </div>
         <div
           onClick={toggleMobileMenu}
+          /* onMouseEnter={toggleMobileMenu}
+              onMouseLeave={toggleMobileMenu} */
           className="lg:hidden md:flex flex flex-row justify-between pl-5 items-center gap-1 ml-0 cursor-pointer relative"
         >
           <p
@@ -129,18 +133,21 @@ function Header() {
 
         <div
           onClick={toggleAccountMenu}
+          /* onMouseEnter={toggleAccountMenu}
+              onMouseLeave={toggleAccountMenu} */
           className="flex flex-row items-center gap-2 cursor-pointer relative"
         >
-          <div className="w-7 h-7 md:w-[1.96rem] md:h-[1.96rem] lg:w-[1.85rem] lg:h-[1.85rem] 
-          rounded-[0.22rem] overflow-hidden">
-            {/* <img src="/images/default-squidgame2.png"></img> */}
+          <div
+            className="w-7 h-7 md:w-[1.96rem] md:h-[1.96rem] lg:w-[1.85rem] lg:h-[1.85rem] 
+          rounded-[0.22rem] overflow-hidden"
+          >
             <img src="/images/default-green.png"></img>
           </div>
 
           <AiFillCaretDown
             className={`text-white w-[0.82rem] transition ${
               showAccountMenu ? "rotate-180" : "rotate-0"
-            }`}
+            } md:block hidden`}
           />
           <AccountMenu visible={showAccountMenu} />
         </div>
