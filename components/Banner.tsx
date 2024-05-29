@@ -2,7 +2,6 @@ import { baseUrl } from "@/constants/movie";
 import { Movie } from "@/typings";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-/* import useBillboard from "@/hooks/useBillboard"; */
 import { AiOutlineInfoCircle } from "react-icons/ai";
 import { BsFillPlayFill } from "react-icons/bs";
 import { useRecoilState } from "recoil";

@@ -1,7 +1,6 @@
 import useCurrentUser from "@/hooks/useCurrentUser";
 import { signOut } from "next-auth/react";
 import React from "react";
-import NetflixSearchLogo from "./NetflixSearchLogo";
 import NetflixPencilLogo from "./NetflixPencilLogo";
 import NetflixTransferProfileLogo from "./NetflixTransferProfileLogo";
 import NetflixAccountLogo from "./NetflixAccountLogo";
@@ -18,15 +17,12 @@ const AccountMenu: React.FC<AccountMenuProps> = ({ visible }) => {
   /* const { data: user } = useCurrentUser(); */
 
   return (
-    <div className="bg-black/90 w-[13.70rem] absolute top-[51px] right-0 pt-4 flex-col flex 
-    border border-[#414142]/60">
+    <div
+      className="bg-black/90 w-[13.70rem] absolute top-[51px] right-0 pt-4 flex-col flex 
+    border border-[#414142]/60"
+    >
       <div className="flex flex-col gap-2.5">
         <div className="px-2.5 group/item flex flex-row gap-2 items-center w-full">
-          {/* <img
-            className="w-8 rounded-md"
-            src="/images/default-squidgame2.png"
-            alt=""
-          ></img> */}
           <img
             className="w-[1.95rem] h-[1.95rem] rounded-[0.22rem]"
             src="/images/default-green.png"
@@ -97,15 +93,11 @@ const AccountMenu: React.FC<AccountMenuProps> = ({ visible }) => {
 
           <hr className="border-[#414142] border-1 mt-2" />
         </div>
-
       </div>
-      <div
-            className="py-3 text-center items-center text-[#dfe0e0] text-[13px] hover/item:underline"
-          >
-            Sign out of Netflix
-          </div>
+      <div className="py-3 text-center items-center text-[#dfe0e0] text-[13px] hover/item:underline">
+        Sign out of Netflix
+      </div>
     </div>
-    
   );
 };
 

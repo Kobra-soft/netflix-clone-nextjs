@@ -27,7 +27,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ visible }) => {
         flex
         "
     >
-      <div className="flex flex-col py-0">
+      <div className="flex flex-col">
         <div className="text-[12.666px] text-center text-white hover:bg-[#242424]/40 py-4">
           Home
         </div>

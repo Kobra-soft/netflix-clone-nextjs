@@ -6,7 +6,6 @@ import { BsFillPlayFill } from "react-icons/bs";
 
 const Billboard = () => {
   const { data } = useBillboard();
-
   const [showMobileMenu, setShowMobileMenu] = useState(false);
 
   function truncate(string: string, n: number) {

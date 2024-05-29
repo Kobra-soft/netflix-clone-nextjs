@@ -1,11 +1,8 @@
 import { useCallback, useEffect, useState } from "react";
 import React from "react";
-
 import { AiFillCaretDown } from "react-icons/ai";
-
 import NetflixSearchLogo from "./NetflixSearchLogo";
 import NetflixBellLogo from "./NetflixBellLogo";
-
 import NavbarItem from "./NavbarItem";
 import MobileMenu from "./mobileMenu";
 import NavbarItemHome from "./NavBarItemHome";
@@ -61,11 +58,6 @@ const Navbar = () => {
             ${ShowBackground ? "bg-[#0b0b0b] bg-opacity-90" : ""}
             `}
       >
-        {/* <img
-          className="h-[0.92rem] sm:h-[1.0rem] md:h-[1.0rem] lg:h-[1.55rem]"
-          src="/images/logo.png"
-          alt=""
-        /> */}
         <div
           className="
                 flex-row

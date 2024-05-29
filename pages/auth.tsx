@@ -2,7 +2,6 @@ import axios from "axios";
 import { useCallback, useState } from "react";
 import Input from "@/components/Input";
 import { signIn } from "next-auth/react";
-
 import { FcGoogle } from "react-icons/fc";
 import { FaGithub } from "react-icons/fa";
 
@@ -50,7 +49,6 @@ const Auth = () => {
         <nav className="p-[3.76rem] py-[1.4rem]">
           <img src="/images/logo.png" alt="Logo" className="h-[1.55rem]" />
         </nav>
-        {/* container */}
         <div className="flex justify-center">
           <div className="bg-black bg-opacity-70 px-16 py-16 self-center mt-2 lg:w-2/5 lg:max-w-md w-full">
             <h2 className="text-white text-4xl mb-8 font-semibold">

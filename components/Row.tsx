@@ -1,27 +1,8 @@
-import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
-import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
-import { BiChevronLeft, BiChevronRight } from "react-icons/bi";
-import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { HiOutlineChevronLeft, HiOutlineChevronRight } from "react-icons/hi";
-import {
-  IoChevronBackCircleSharp,
-  IoChevronForwardCircleSharp,
-  IoChevronBackCircleOutline,
-  IoChevronForwardCircleOutline,
-} from "react-icons/io5";
-import {
-  TbChevronsLeft,
-  TbChevronsRight,
-  TbCircleChevronsLeft,
-  TbCircleChevronsRight,
-} from "react-icons/tb";
-
 /* import { DocumentData } from 'firebase/firestore' */
 import { useRef, useState } from "react";
 import { Movie } from "../typings";
 import Thumbnail from "./Thumbnail";
-
 interface Props {
   title: string;
   movies: Movie[] /* | DocumentData[] */;
@@ -45,10 +26,6 @@ function Row({ title, movies }: Props) {
   };
 
   return (
-    /* #### added relative on parent div 
-    to fix the issue of TRENDING NOW title 
-    not displaying over the Banner Hero image */
-
     <div
       className="
           relative md:h-80 lg:h-80 xl:h-80
@@ -76,8 +53,6 @@ function Row({ title, movies }: Props) {
             }`}
           onClick={() => handleClick("left")}
         />
-
-        {/* THUMBNAIL! */}
         <div
           className="flex items-center space-x-1.5 overflow-x-scroll scrollbar-hide md:space-x-[0.5rem] md:pl-2"
           ref={rowRef}

@@ -3,8 +3,6 @@ import { useRecoilState } from "recoil";
 import { modalState, movieState } from "@/atoms/modalAtom";
 import { PlusIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import { useEffect, useState } from "react";
-import { Movie } from "@/typings";
-import { set } from "lodash";
 import { Element } from "@/typings";
 import { Genre } from "@/typings";
 import ReactPlayer from "react-player";
@@ -144,16 +142,10 @@ function Modal() {
                     {genres?.map((genre) => genre.name).join(", ")}
                   </h4>
                 </div>
-
                 <div>
                   <span className="text-[#6b6b6b]">Original Language: </span>
                   <h4 className="inline-element">{movie?.original_language}</h4>
                 </div>
-
-                {/* <div>
-                  <span className="text-[#6b6b6b]">Cast: </span>
-                  {movie?.original_language}
-                </div> */}
               </div>
             </div>
           </div>

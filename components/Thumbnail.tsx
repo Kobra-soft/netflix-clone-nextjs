@@ -29,7 +29,6 @@ function Thumbnail({ movie }: Props) {
         }`}
         className="rounded-[4px] sm:rounded-[3px] md:rounded-[3px] object-cover sm:object-contain"
         fill
-        /* sizes="sm:min-h-[16rem] sm:min-w-[171px] min-h-[11rem] min-w-[120px] lg:min-h-[16rem] lg:min-w-[171px]" */
         alt=""
       />
     </div>

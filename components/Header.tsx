@@ -1,8 +1,5 @@
-import Image from "next/image";
 /* import useAuth from '../hooks/useAuth' */
 import { useCallback, useEffect, useState } from "react";
-import Link from "next/link";
-/* import BasicMenu from './BasicMenu' */
 import { AiFillCaretDown } from "react-icons/ai";
 import NetflixSearchLogo from "./NetflixSearchLogo";
 import NetflixBellLogo from "./NetflixBellLogo";
@@ -10,8 +7,6 @@ import NavbarItem from "./NavbarItem";
 import MobileMenu from "./mobileMenu";
 import NavbarItemHome from "./NavBarItemHome";
 import AccountMenu from "./AccountMenu";
-import { request } from "https";
-import { background } from "@chakra-ui/react";
 
 function Header() {
   const [isHovered, setIsHovered] = useState(false);
@@ -80,26 +75,24 @@ function Header() {
           <div>
             <NavbarItemHome label="Home" />
           </div>
-          <div /* onClick={} */>
+          <div >
             <NavbarItem label="Series" />
           </div>
-          <div /* onClick={} */>
+          <div >
             <NavbarItem label="Films" />
           </div>
-          <div /* onClick={} */>
+          <div >
             <NavbarItem label="New & Popular" />
           </div>
-          <div /* onClick={} */>
+          <div >
             <NavbarItem label="My List" />
           </div>
-          <div /* onClick={} */>
+          <div >
             <NavbarItem label="Browse by Languages" />
           </div>
         </div>
         <div
           onClick={toggleMobileMenu}
-          /* onMouseEnter={toggleMobileMenu}
-              onMouseLeave={toggleMobileMenu} */
           className="lg:hidden md:flex flex flex-row justify-between pl-5 items-center gap-1 ml-0 cursor-pointer relative"
         >
           <p
@@ -133,8 +126,6 @@ function Header() {
 
         <div
           onClick={toggleAccountMenu}
-          /* onMouseEnter={toggleAccountMenu}
-              onMouseLeave={toggleAccountMenu} */
           className="flex flex-row items-center gap-2 cursor-pointer relative"
         >
           <div

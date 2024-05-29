@@ -1,10 +1,5 @@
 import Head from "next/head";
 import Header from "@/components/Header";
-import { getSession } from "next-auth/react";
-import useCurrentUser from "@/hooks/useCurrentUser";
-import Billboard from "@/components/Billboard";
-import MovieList from "@/components/MovieList";
-import useMovieList from "@/hooks/useMovieList";
 import { Movie } from "../typings";
 import requests from "@/utils/requests";
 import Banner from "@/components/Banner";
@@ -12,29 +7,6 @@ import Row from "@/components/Row";
 import { useRecoilValue } from "recoil";
 import { modalState } from "@/atoms/modalAtom";
 import Modal from "@/components/Modal";
-
-/* export async function getServerSideProps(context: NextPageContext) {
-  const session = await getSession(context);
-
-  if (!session) {
-    return {
-      redirect: {
-        destination: '/auth',
-        permanent: false,
-      }
-    }
-  }
-
-  return {
-    props: {}
-  }
-} */
-
-/* export default function Home() {
-  const { data: user } = useCurrentUser();
-  const { data: movies = [] } = useMovieList();
-} */
-
 interface Props {
   netflixOriginals: Movie[];
   trendingNow: Movie[];
@@ -78,7 +50,6 @@ const Home = ({
         <section className="pl-4 sm:pl-4 md:pl-9 lg:pl-11 xl:pl-[58px]">
           <Row title="Trending Now" movies={trendingNow} />
           <Row title="Top Rated" movies={topRated} />
-          {/* My List */}
           <Row title="Action" movies={actionMovies} />
           <Row title="Horror" movies={horrorMovies} />
           <Row title="Comedies" movies={comedyMovies} />
